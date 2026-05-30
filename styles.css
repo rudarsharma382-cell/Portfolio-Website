@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* --- Custom Variables & Theme Base --- */
+:root {
+  --bg-primary: #08080a;
+  --bg-secondary: #111113;
+  --border-color: rgba(39, 39, 42, 0.6); /* Zinc-800 border look */
+  --accent-color: #00f5ff; /* Sleek futuristic cyber cyan */
+  --accent-glow: rgba(0, 245, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Monospace fonts for labels and metadata */
+.font-mono-tech {
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Headings typography */
+.font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* --- Background Grid & Ambient Glow --- */
+.tech-grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(39, 39, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 39, 42, 0.05) 1px, transparent 1px);
+}
+
+.ambient-glow-1 {
+  background: radial-gradient(circle 400px at 20% 30%, rgba(99, 102, 241, 0.08), transparent 80%);
+}
+
+.ambient-glow-2 {
+  background: radial-gradient(circle 500px at 80% 70%, rgba(6, 182, 212, 0.08), transparent 80%);
+}
+
+/* --- High-Tech Layout Borders & Grid Cells --- */
+.bento-grid-container {
+  display: grid;
+  gap: 1px;
+  background-color: var(--border-color);
+}
+
+.bento-cell {
+  background-color: var(--bg-secondary);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-cell::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bento-cell:hover::before {
+  opacity: 1;
+}
+
+.bento-cell-hover {
+  position: relative;
+}
+
+.bento-cell-hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  transition: border-color 0.4s ease;
+  pointer-events: none;
+}
+
+.bento-cell-hover:hover::after {
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+/* --- Cybernetic Visual Accents --- */
+.tech-dot {
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.tech-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.tech-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+}
+
+/* --- Reveal Animations --- */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-element.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Micro-Animations --- */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+}
+
+.pulse-glow-indicator {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes scanLine {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.avatar-scan-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  box-shadow: 0 0 8px var(--accent-color);
+  opacity: 0.6;
+  animation: scanLine 4s linear infinite;
+  pointer-events: none;
+}
+
+/* Magnetic style action buttons */
+.magnetic-btn {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.magnetic-btn:hover {
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px -10px rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link-underline:hover::after,
+.nav-link-active::after {
+  width: 100%;
+}
