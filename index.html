@@ -15,15 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'orchid': '#E066FF',
-            'orchid-dark': '#C084FC',
-            'dark-bg': '#050507',
-            'dark-volcano': '#0F0F14',
-            'dark-border': 'rgba(63, 63, 70, 0.4)',
+            'cyber-cyan': '#00f5ff',
+            'cyber-blue': '#06b6d4',
+            'dark-bg': '#08080a',
+            'dark-card': '#111113',
+            'dark-border': 'rgba(39, 39, 42, 0.8)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
-            'serif': ['Playfair Display', 'Georgia', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -37,31 +36,31 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-black text-white selection:bg-[#E066FF] selection:text-black font-sans relative antialiased">
+<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased">
 
-  <!-- --- 1. EXPANSIVE NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-950 bg-black/45 backdrop-blur-md transition-all duration-300">
+  <!-- --- 1. HIGH-TECH STICKY NAVIGATION BAR --- -->
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
-      <!-- Logo "rudarsharma." -->
+      <!-- Logo "rudarsharma." with cyber dot -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-[#E066FF] font-extrabold font-serif">.</span>
+          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
         </span>
       </a>
 
       <!-- Center navigation links -->
       <nav class="hidden md:flex items-center space-x-10 font-mono-tech text-[10px]">
         <a href="/" class="nav-link nav-link-underline text-white nav-link-active">HOME</a>
-        <a href="/projects/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">PROJECTS</a>
+        <a href="/projects/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">EXPERIENCE</a>
         <a href="/skills/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">SKILLS</a>
-        <a href="/milestones/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">MILESTONES</a>
-        <a href="/connect/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">CONNECT</a>
+        <a href="/milestones/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">TRACK RECORD</a>
+        <a href="/connect/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">CONTACT</a>
       </nav>
 
-      <!-- Right side Pill Button -->
+      <!-- Right side CTA -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-[#E066FF] hover:text-[#E066FF] transition-all duration-400 bg-zinc-900/10">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
           SUPPORT WORK
         </a>
       </div>
@@ -73,101 +72,123 @@
     </div>
 
     <!-- Mobile Drawer Overlay -->
-    <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-950 bg-black/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
-      <a href="/" class="block text-[#E066FF] py-2">HOME</a>
-      <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">PROJECTS</a>
+    <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-900 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
+      <a href="/" class="block text-cyber-cyan py-2">HOME</a>
+      <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
-      <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">MILESTONES</a>
-      <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONNECT</a>
+      <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
+      <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONTACT</a>
     </div>
   </header>
 
-  <!-- --- MAIN HERO SHOWCASE CONTAINER --- -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32">
-    <section id="home" class="reveal-element">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+  <!-- --- MAIN BENTO CONTENT CONTAINER --- -->
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12">
+    <section id="home" class="reveal-element md:pt-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         
-        <!-- HERO LEFT (70% Width - spans 8 cols) -->
-        <div class="lg:col-span-8 flex flex-col justify-between space-y-20">
+        <!-- LEFT MAIN CARD (Enclosed bento - spans 8 cols) -->
+        <div class="lg:col-span-8 bento-card rounded-2xl p-8 sm:p-12 flex flex-col justify-between space-y-12 relative">
+          <div class="tech-corner-tl"></div>
           
-          <div class="space-y-10">
-            <!-- Top capsule badge sitting freely -->
-            <div>
-              <span class="capsule-badge text-[9px] font-mono-tech">PORTFOLIO OF RUDAR SHARMA</span>
-            </div>
+          <!-- Top Tagline -->
+          <div class="flex items-center space-x-3">
+            <span class="px-2 py-0.5 bg-cyan-950/40 border border-cyan-800/40 text-[9px] font-mono-tech text-cyber-cyan rounded-md pulse-glow-indicator">STATUS: ONLINE</span>
+            <p class="font-mono-tech text-[10px] text-zinc-500">Portfolio of Rudar Sharma</p>
+          </div>
 
-            <!-- Sweeping massive 7xl catchphrase heading -->
-            <h1 class="text-5xl sm:text-7xl font-sans font-extrabold tracking-tight leading-[1.05] text-white">
+          <!-- Sweeping Display Heading (Big, Professional Font) -->
+          <div class="space-y-6">
+            <h1 class="text-4xl sm:text-6xl font-sans font-extrabold tracking-tight leading-[1.08] text-white">
               Engineering the <br>
-              <span class="font-serif italic text-[#E066FF] font-medium">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-400 to-indigo-500">
                 Future of Robotics.
               </span>
             </h1>
+            <p class="text-zinc-400 text-sm max-w-xl leading-relaxed">
+              Combining software architectures, neural models, and electronics hardware engineering to create intelligent autonomous robots and develop robust full-stack applications.
+            </p>
           </div>
 
-          <!-- Wide Borderless 3-Column Metadata Row (Separated only by fine vertical rules) -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-zinc-800">
-            
-            <!-- Column 1: Identity -->
-            <div class="space-y-2">
-              <span class="font-mono-tech text-[9px] text-[#E066FF] font-bold block leading-none">IDENTITY</span>
-              <h4 class="font-sans font-extrabold text-base text-white mt-1">Rudar Sharma</h4>
-              <p class="text-zinc-400 text-xs leading-relaxed mt-1.5">Class 10 Student &bull; Core Contributor at HOOLLOW</p>
+          <!-- 3-Column Metadata Grid Lines (Separated by fine borders) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-zinc-800">
+            <!-- Block 1 -->
+            <div class="space-y-1.5">
+              <span class="font-mono-tech text-[9px] text-zinc-500 block">01 / IDENTITY</span>
+              <h4 class="font-sans font-extrabold text-sm text-white">Rudar Sharma</h4>
+              <p class="text-zinc-500 text-xs leading-normal mt-1">Class 10 Student &bull; Core Contributor at HOOLLOW</p>
             </div>
-
-            <!-- Column 2: Academic Background -->
-            <div class="space-y-2 border-t md:border-t-0 md:border-l border-zinc-800 pt-6 md:pt-0 md:pl-8">
-              <span class="font-mono-tech text-[9px] text-[#E066FF] font-bold block leading-none">ACADEMIC BACKGROUND</span>
-              <h4 class="font-sans font-extrabold text-base text-white mt-1">STEM Stream Student</h4>
-              <p class="text-zinc-400 text-xs leading-relaxed mt-1.5">School of Specialized Excellence (SoSE), Delhi</p>
+            <!-- Block 2 -->
+            <div class="space-y-1.5 border-t md:border-t-0 md:border-l border-zinc-800 pt-4 md:pt-0 md:pl-6">
+              <span class="font-mono-tech text-[9px] text-zinc-500 block">02 / EDUCATION</span>
+              <h4 class="font-sans font-extrabold text-sm text-white">STEM Stream Student</h4>
+              <p class="text-zinc-500 text-xs leading-normal mt-1">School of Specialized Excellence (SoSE), Delhi</p>
             </div>
-
-            <!-- Column 3: Vision -->
-            <div class="space-y-2 border-t md:border-t-0 md:border-l border-zinc-800 pt-6 md:pt-0 md:pl-8">
-              <span class="font-mono-tech text-[9px] text-[#E066FF] font-bold block leading-none">CORE VISION</span>
-              <p class="text-zinc-400 text-xs leading-relaxed mt-1.5 italic font-medium">
+            <!-- Block 3 -->
+            <div class="space-y-1.5 border-t md:border-t-0 md:border-l border-zinc-800 pt-4 md:pt-0 md:pl-6">
+              <span class="font-mono-tech text-[9px] text-zinc-500 block">03 / CORE MISSION</span>
+              <p class="text-zinc-400 text-xs italic font-medium leading-relaxed mt-1">
                 "Combining software, AI, and hardware engineering to crack IIT, build intelligent robotics, and innovate next-generation global solutions."
               </p>
             </div>
-
           </div>
 
-          <!-- Skill tag capsule pills & Explore link out in the open -->
-          <div class="space-y-10 pt-4">
+          <!-- Core Technical Pillars stacked below -->
+          <div class="space-y-3 pt-4">
+            <span class="font-mono-tech text-[9px] text-zinc-500 block font-bold">CORE TECHNICAL PILLARS</span>
             <div class="flex flex-wrap gap-2.5">
-              <span class="capsule-badge">Robotics & AI</span>
-              <span class="capsule-badge">Python Dev</span>
-              <span class="capsule-badge">Embedded Systems</span>
-              <span class="capsule-badge">AI Workflows</span>
-            </div>
-
-            <div>
-              <a href="/projects/" class="circle-arrow-link">
-                <span>EXPLORE SELECTED VENTURES</span>
-                <span class="arrow-circle">
-                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                </span>
-              </a>
+              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Robotics & AI</span>
+              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Python Engineering</span>
+              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Frontend Dev</span>
+              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">AI-Assisted Workflows</span>
+              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Flutter & Mobile</span>
             </div>
           </div>
-
         </div>
 
-        <!-- HERO RIGHT (30% Width - spans 4 cols) -->
-        <div class="lg:col-span-4 flex flex-col items-center lg:items-end pt-12 lg:pt-0">
+        <!-- RIGHT BENTO COLUMN (Avatar frame, Terminal, Stats card - spans 4 cols) -->
+        <div class="lg:col-span-4 flex flex-col justify-between gap-6">
           
-          <!-- Large vertical framed layout box in obsidian void -->
-          <div class="relative w-full aspect-[4/5] max-w-[280px] rounded-3xl overflow-hidden border border-zinc-800 bg-[#0c0c0e]/30 p-2.5 flex items-center justify-center group shadow-2xl">
+          <!-- Large vertical framed layout box with avatar -->
+          <div class="bento-card rounded-2xl p-6 flex flex-col items-center justify-center relative aspect-square w-full max-w-[340px] mx-auto">
+            <div class="tech-corner-br"></div>
             
-            <img src="/robotics_avatar.png" alt="Rudar Sharma Robotics Avatar Portrait" class="w-full h-full object-cover rounded-2xl filter grayscale opacity-90 transition-all duration-75">
-            
-            <!-- Floating absolute box in bottom-left -->
-            <div class="absolute bottom-6 left-6 border border-zinc-800/80 bg-black/90 backdrop-blur-md px-5 py-3 rounded-2xl flex items-center space-x-3 shadow-2xl transition-all duration-300">
-              <span class="w-2.5 h-2.5 rounded-full bg-[#E066FF] shadow-[0_0_8px_#E066FF]"></span>
-              <div>
-                <span class="font-mono-tech text-[8px] text-zinc-500 block leading-none">TENURE</span>
-                <span class="text-white font-sans font-extrabold text-xs tracking-tight block mt-0.5">1.7+ YRS</span>
+            <div class="relative w-full h-full rounded-xl overflow-hidden border border-zinc-800 bg-black flex items-center justify-center p-2">
+              <!-- Scan line overlay -->
+              <div class="avatar-scan-overlay"></div>
+              
+              <!-- Robotics Custom Avatar -->
+              <img src="/robotics_avatar.png" alt="Rudar Sharma Robotics Avatar" class="w-full h-full object-cover rounded-lg filter grayscale hover:grayscale-0 transition-all duration-500 opacity-90">
+              
+              <!-- Absolute Floating tag inside frame bottom left -->
+              <div class="absolute bottom-4 left-4 border border-zinc-800/80 bg-black/90 px-3.5 py-2 rounded-xl flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-cyber-cyan shadow-[0_0_8px_#00f5ff]"></span>
+                <div>
+                  <span class="font-mono-tech text-[7px] text-zinc-500 block leading-none">TENURE</span>
+                  <span class="text-white font-sans font-extrabold text-[10px] tracking-tight block mt-0.5">1.7+ YRS</span>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Terminal Logs Simulator -->
+          <div class="bento-card rounded-2xl p-5 font-mono-tech text-[9px] text-zinc-500 h-28 overflow-hidden flex flex-col justify-end space-y-1">
+            <div id="terminal-cursor" class="text-cyber-cyan flex items-center space-x-1">
+              <span>&gt;</span>
+              <span id="log-text">Robotics kernel system initialized...</span>
+            </div>
+            <div class="text-zinc-600">&bull; Core contribution loaded: HOOLLOW web modules.</div>
+            <div class="text-zinc-600">&bull; STEM credentials validated successfully.</div>
+          </div>
+
+          <!-- 20+ Global Certifications stats block card -->
+          <div class="bento-card rounded-2xl p-6 relative flex items-center justify-between">
+            <div>
+              <h3 class="text-4xl font-sans font-extrabold text-white tracking-tight leading-none">20+</h3>
+              <span class="font-mono-tech text-[8px] text-cyber-cyan tracking-wider block mt-2">GLOBAL CERTIFICATIONS</span>
+              <p class="text-zinc-500 text-xs mt-1.5 leading-snug">Google, Microsoft, IBM, Cisco Systems verified.</p>
+            </div>
+            <div class="p-3 bg-zinc-950 border border-zinc-800 rounded-xl text-zinc-400">
+              <i data-lucide="award" class="w-6 h-6"></i>
             </div>
           </div>
 

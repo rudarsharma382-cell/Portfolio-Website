@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-/* --- Expansive Volcanic Editorial Theme Custom Variables --- */
+/* --- High-Tech Terminal Theme Variables --- */
 :root {
-  --bg-primary: #050507;
-  --bg-secondary: #0f0f14;
-  --border-color: rgba(63, 63, 70, 0.4); /* border-zinc-700/40 equivalent */
-  --accent-color: #E066FF; /* Electric Orchid */
-  --accent-glow: rgba(224, 102, 255, 0.15);
+  --bg-primary: #08080a;
+  --bg-secondary: #111113;
+  --border-color: rgba(39, 39, 42, 0.8); /* border-zinc-800/80 equivalent */
+  --accent-color: #00f5ff; /* Glowing neon cyber blue */
+  --accent-glow: rgba(0, 245, 255, 0.15);
 }
 
 html {
@@ -17,44 +17,79 @@ html {
   overflow-x: hidden;
 }
 
-/* Playfair Display Serif style override */
-.font-serif {
-  font-family: 'Playfair Display', Georgia, serif;
-}
-
-/* Monospace tracked uppercase technical labels */
+/* Monospace spacing technical labels */
 .font-mono-tech {
   font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
-/* --- Clean Volcanic Scrollbar --- */
+/* Custom scrollbars */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f1f24;
-  border-radius: 2px;
+  background: #27272a;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-color);
 }
 
-/* --- Expansive Layout Dividers & Partitions --- */
-.editorial-row {
-  border-bottom: 1px solid var(--border-color);
-  transition: all 0.4s ease;
+/* --- High-Tech Bento Cards --- */
+.bento-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Smooth Entrance Reveal Animations --- */
+.bento-card:hover {
+  border-color: rgba(6, 182, 212, 0.4); /* Soft cyber blue border on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Cybernetic Visual Accents --- */
+.tech-dot {
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.tech-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.tech-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+}
+
+/* --- Reveal Animations --- */
 .reveal-element {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-element.revealed {
@@ -62,7 +97,55 @@ html {
   transform: translateY(0);
 }
 
-/* Navigation active underlines */
+/* --- Micro-Animations --- */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+}
+
+.pulse-glow-indicator {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes scanLine {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.avatar-scan-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  box-shadow: 0 0 8px var(--accent-color);
+  opacity: 0.6;
+  animation: scanLine 4s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Magnetic style action buttons */
+.magnetic-btn {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.magnetic-btn:hover {
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px -10px rgba(255, 255, 255, 0.1);
+}
+
 .nav-link-underline {
   position: relative;
 }
@@ -81,54 +164,4 @@ html {
 .nav-link-underline:hover::after,
 .nav-link-active::after {
   width: 100%;
-}
-
-/* Custom visual micro-badge adjustments */
-.capsule-badge {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #a1a1aa;
-  background-color: rgba(15, 15, 20, 0.4);
-  border: 1px solid rgba(63, 63, 70, 0.6);
-  padding: 4px 14px;
-  border-radius: 9999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Arrow inside circle graphic link */
-.circle-arrow-link {
-  display: inline-flex;
-  align-items: center;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.circle-arrow-link .arrow-circle {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-}
-
-.circle-arrow-link:hover {
-  color: var(--accent-color);
-}
-
-.circle-arrow-link:hover .arrow-circle {
-  transform: translateX(6px);
-  border-color: var(--accent-color);
-  background-color: rgba(224, 102, 255, 0.1);
 }
