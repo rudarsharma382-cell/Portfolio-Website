@@ -15,15 +15,15 @@
       theme: {
         extend: {
           colors: {
-            'lilac': '#D6B4FC',
-            'lilac-dark': '#C084FC',
-            'dark-bg': '#000000',
-            'dark-card': 'rgba(9, 9, 11, 0.45)',
-            'dark-border': 'rgba(24, 24, 27, 0.95)',
+            'orchid': '#E066FF',
+            'orchid-dark': '#C084FC',
+            'dark-bg': '#050507',
+            'dark-volcano': '#0F0F14',
+            'dark-border': 'rgba(63, 63, 70, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
-            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -37,98 +37,90 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-black text-white selection:bg-[#D6B4FC] selection:text-black font-sans relative min-h-screen flex flex-col justify-between antialiased">
+<body class="bg-black text-white selection:bg-[#E066FF] selection:text-black font-sans relative min-h-screen flex flex-col justify-between antialiased">
 
-  <!-- Main Standalone Centered Stack -->
-  <main class="relative z-10 max-w-2xl w-full mx-auto px-6 py-16 my-auto">
+  <!-- Main Standalone Centered Stack in Obsidian Void -->
+  <main class="relative z-10 max-w-2xl w-full mx-auto px-6 py-20 my-auto">
     <section id="connect" class="reveal-element">
-      <div class="flex flex-col items-center text-center space-y-8">
+      <div class="flex flex-col items-center text-center space-y-12">
         
-        <!-- Centered circular profile image with subtle lilac glow ring -->
-        <div class="relative w-28 h-28 rounded-full p-1 border border-zinc-800 bg-zinc-950 flex items-center justify-center shadow-2xl">
-          <div class="absolute inset-0 rounded-full border border-purple-500/25 animate-pulse"></div>
+        <!-- Centered circular profile image with elegant orchid aura shadow -->
+        <div class="relative w-28 h-28 rounded-full p-0.5 border border-zinc-800 bg-zinc-950 flex items-center justify-center shadow-[0_0_35px_rgba(224,102,255,0.18)]">
           <img src="/robotics_avatar.png" alt="Rudar Sharma Circular Profile Avatar" class="w-full h-full object-cover rounded-full filter grayscale opacity-90 transition-all duration-300">
         </div>
 
         <!-- Typography Branded Heading -->
-        <div class="space-y-3.5">
-          <!-- Bold sans first name + Cormorant Garamond italic serif last name -->
+        <div class="space-y-4">
+          <!-- Bold sans first name + Playfair Display serif italic last name -->
           <h2 class="text-5xl font-sans font-extrabold text-white tracking-tight leading-none">
-            Rudar <span class="font-serif italic text-[#D6B4FC] font-medium">Sharma.</span>
+            Rudar <span class="font-serif italic text-[#E066FF] font-medium">Sharma.</span>
           </h2>
-          <span class="font-mono-tech text-[8px] text-[#D6B4FC] block tracking-[0.35em] uppercase font-bold">@ C O D E A L C H E M I S T _</span>
+          <span class="font-mono-tech text-[8px] text-[#E066FF] block tracking-[0.35em] uppercase font-bold">@ C O D E A L C H E M I S T _</span>
         </div>
 
         <!-- Subtitle description bolding key entities -->
         <div>
-          <p class="text-zinc-400 text-sm max-w-md leading-relaxed">
-            Building <strong class="text-white font-bold">Hoollow</strong>. Engineering High-Fidelity <strong class="text-white font-bold">Robotics Systems</strong>.
+          <p class="text-zinc-500 text-sm max-w-sm leading-relaxed">
+            Building <strong class="text-white font-bold">Hoollow</strong>. Engineering the <strong class="text-white font-bold">Future of Robotics</strong>.
           </p>
         </div>
 
-        <!-- Wide pill-shaped links routing stack matching the email/portfolio cards screenshot exactly -->
-        <div class="w-full space-y-4 pt-4 max-w-lg">
+        <!-- Open, card-less edge-to-edge text links with generous vertical margins and orchid underlines -->
+        <div class="w-full space-y-2 pt-6 max-w-md">
           
           <!-- Link 1: Email -->
-          <a href="mailto:rudarsharma382@gmail.com" class="w-full px-6 py-4.5 bg-[#09090b]/40 border border-zinc-900 hover:border-purple-500/20 rounded-2xl flex items-center justify-between text-left group transition-all duration-300 shadow-xl">
-            <div class="flex items-center space-x-4.5">
-              <span class="p-3 bg-purple-950/20 border border-purple-900/20 rounded-2xl text-[#D6B4FC] transition-colors duration-300">
-                <i data-lucide="mail" class="w-4 h-4"></i>
+          <a href="mailto:rudarsharma382@gmail.com" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-[#E066FF] transition-colors duration-300 relative inline-block">
+                Email Me
+                <!-- Custom smooth absolute orchid hover underline -->
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-[#E066FF] transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="font-sans font-extrabold text-sm text-white block">Email Me</span>
-                <span class="font-mono-tech text-[8px] text-[#D6B4FC] block mt-0.5 font-bold">DIRECT INQUIRY</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">DIRECT INQUIRY</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-[#D6B4FC] transition-all duration-300 transform group-hover:translate-x-1">
+            <div class="text-zinc-600 group-hover:text-[#E066FF] transition-all duration-300 transform group-hover:translate-x-1.5">
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 2: Portfolio Home -->
-          <a href="/" class="w-full px-6 py-4.5 bg-[#09090b]/40 border border-zinc-900 hover:border-purple-500/20 rounded-2xl flex items-center justify-between text-left group transition-all duration-300 shadow-xl">
-            <div class="flex items-center space-x-4.5">
-              <span class="p-3 bg-zinc-950 border border-zinc-900 rounded-2xl text-zinc-400 group-hover:text-[#D6B4FC] transition-colors duration-300">
-                <i data-lucide="globe" class="w-4 h-4"></i>
+          <a href="/" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-[#E066FF] transition-colors duration-300 relative inline-block">
+                Portfolio Home
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-[#E066FF] transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="font-sans font-extrabold text-sm text-white block">Portfolio</span>
-                <span class="font-mono-tech text-[8px] text-zinc-500 block mt-0.5">RETURN TO BASE</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">RETURN TO BASE</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-[#D6B4FC] transition-all duration-300 transform group-hover:translate-x-1">
+            <div class="text-zinc-600 group-hover:text-[#E066FF] transition-all duration-300 transform group-hover:translate-x-1.5">
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 3: GitHub -->
-          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full px-6 py-4.5 bg-[#09090b]/40 border border-zinc-900 hover:border-purple-500/20 rounded-2xl flex items-center justify-between text-left group transition-all duration-300 shadow-xl">
-            <div class="flex items-center space-x-4.5">
-              <span class="p-3 bg-zinc-950 border border-zinc-900 rounded-2xl text-zinc-400 group-hover:text-[#D6B4FC] transition-colors duration-300">
-                <i data-lucide="github" class="w-4 h-4"></i>
+          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-[#E066FF] transition-colors duration-300 relative inline-block">
+                GitHub Profile
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-[#E066FF] transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="font-sans font-extrabold text-sm text-white block">GitHub Profile</span>
-                <span class="font-mono-tech text-[8px] text-zinc-500 block mt-0.5">VIEW PROJECTS</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">VIEW REPOSITORIES</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-[#D6B4FC] transition-all duration-300 transform group-hover:translate-x-1">
+            <div class="text-zinc-600 group-hover:text-[#E066FF] transition-all duration-300 transform group-hover:translate-x-1.5">
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 4: YouTube -->
-          <a href="https://www.youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full px-6 py-4.5 bg-[#09090b]/40 border border-zinc-900 hover:border-purple-500/20 rounded-2xl flex items-center justify-between text-left group transition-all duration-300 shadow-xl">
-            <div class="flex items-center space-x-4.5">
-              <span class="p-3 bg-zinc-950 border border-zinc-900 rounded-2xl text-zinc-400 group-hover:text-[#D6B4FC] transition-colors duration-300">
-                <i data-lucide="youtube" class="w-4 h-4"></i>
+          <a href="https://www.youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-[#E066FF] transition-colors duration-300 relative inline-block">
+                YouTube Channel
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-[#E066FF] transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="font-sans font-extrabold text-sm text-white block">YouTube Channel</span>
-                <span class="font-mono-tech text-[8px] text-zinc-500 block mt-0.5">WATCH JOURNEY</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">WATCH JOURNAL TUTORIALS</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-[#D6B4FC] transition-all duration-300 transform group-hover:translate-x-1">
+            <div class="text-zinc-600 group-hover:text-[#E066FF] transition-all duration-300 transform group-hover:translate-x-1.5">
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
@@ -142,7 +134,7 @@
   <!-- --- FOOTER --- -->
   <footer class="py-12 px-6 relative z-10 bg-black text-center font-mono-tech text-[9px] text-zinc-600">
     <div>
-      <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer. All systems integrated.</p>
+      <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer. All connections active.</p>
     </div>
   </footer>
 
