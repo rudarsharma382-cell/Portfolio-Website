@@ -1,33 +1,33 @@
 /**
- * Rudar Sharma Portfolio - Editorial Visual Overhaul Logic
- * Handles reveal animations, responsive navigation drawer, and active nav states.
+ * Rudar Sharma Portfolio - Multi-Page Interactions Engine
+ * Coordinates scroll-triggered animations and mobile navbar drawer states.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- 1. REVEAL ENGINE (Scroll-triggered Fade and Slide-ups) ---
+  // --- 1. REVEAL ENGINE (Scroll-triggered Entrance Animation) ---
   const revealElements = document.querySelectorAll('.reveal-element');
   
   const revealCallback = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('revealed');
-        observer.unobserve(entry.target); // Trigger only once
+        observer.unobserve(entry.target); // Animate once
       }
     });
   };
 
   const revealObserver = new IntersectionObserver(revealCallback, {
-    root: null, // Default viewport
-    threshold: 0.08, // Trigger when 8% is visible
-    rootMargin: '0px 0px -40px 0px'
+    root: null, // Viewport bounds
+    threshold: 0.05, // Trigger when 5% is visible
+    rootMargin: '0px 0px -20px 0px'
   });
 
   revealElements.forEach(element => {
     revealObserver.observe(element);
   });
 
-  // Immediately reveal home section on initial load
+  // Automatically reveal hero sections immediately
   const homeSection = document.querySelector('#home');
   if (homeSection) {
     setTimeout(() => {
@@ -35,8 +35,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
   }
 
+  const projectsSection = document.querySelector('#projects');
+  if (projectsSection) {
+    setTimeout(() => {
+      projectsSection.classList.add('revealed');
+    }, 100);
+  }
 
-  // --- 2. RESPONSIVE MOBILE NAVIGATION HAMBURGER DRAWER ---
+  const skillsSection = document.querySelector('#skills');
+  if (skillsSection) {
+    setTimeout(() => {
+      skillsSection.classList.add('revealed');
+    }, 100);
+  }
+
+  const milestonesSection = document.querySelector('#milestones');
+  if (milestonesSection) {
+    setTimeout(() => {
+      milestonesSection.classList.add('revealed');
+    }, 100);
+  }
+
+  const connectSection = document.querySelector('#connect');
+  if (connectSection) {
+    setTimeout(() => {
+      connectSection.classList.add('revealed');
+    }, 100);
+  }
+
+
+  // --- 2. RESPONSIVE MOBILE NAVIGATION DRAWER CONTROLLER ---
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileDrawer = document.getElementById('mobile-drawer');
 
@@ -52,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Automatically close drawer when a nav link is selected
+    // Close menu automatically on click
     const drawerLinks = mobileDrawer.querySelectorAll('a');
     drawerLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -65,31 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-
-  // --- 3. ACTIVE NAV LINK STATE MANAGER (Scrollspy) ---
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('nav a');
-
-  window.addEventListener('scroll', () => {
-    let currentSectionId = '';
-    
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 150; // Account for sticky menu padding
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('text-white', 'nav-link-active');
-      link.classList.add('text-zinc-400');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('text-white', 'nav-link-active');
-        link.classList.remove('text-zinc-400');
-      }
-    });
-  });
 
 });
