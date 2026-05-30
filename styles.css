@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Playfair+Display:ital,wght@1,600;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-/* --- Premium Editorial Theme Variables --- */
+/* --- Premium Editorial Scale-Up Theme Variables --- */
 :root {
   --bg-primary: #000000;
-  --border-color: rgba(39, 39, 42, 0.4); /* border-zinc-900 equivalent */
-  --accent-color: #C084FC; /* Elegant Orchid Accent */
+  --border-color: rgba(63, 63, 70, 0.4); /* border-zinc-800 equivalent */
+  --accent-color: #C084FC; /* Radiant Orchid Pink */
   --accent-glow: rgba(192, 132, 252, 0.15);
 }
 
@@ -19,7 +19,7 @@ html {
 /* Monospace tracked tech labels */
 .font-mono-tech {
   font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@ html {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #18181b;
+  background: #27272a;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -132,8 +132,8 @@ html {
 
 /* Editorial layout row borders */
 .divider-row {
-  border-bottom: 1px solid rgba(39, 39, 42, 0.4);
+  border-bottom: 1px solid rgba(63, 63, 70, 0.4);
 }
 .divider-col {
-  border-left: 1px solid rgba(39, 39, 42, 0.4);
+  border-left: 1px solid rgba(63, 63, 70, 0.4);
 }

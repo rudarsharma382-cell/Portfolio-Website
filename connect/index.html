@@ -18,7 +18,7 @@
             'orchid': '#C084FC',
             'orchid-light': '#D6B4FC',
             'dark-bg': '#000000',
-            'dark-border': 'rgba(39, 39, 42, 0.4)',
+            'dark-border': 'rgba(63, 63, 70, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
@@ -30,6 +30,9 @@
     }
   </script>
 
+  <!-- Google Font Link (Hyper-Readability Update) -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
   <!-- Lucide Icons for Premium UI Visuals -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -39,7 +42,7 @@
 <body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative min-h-screen flex flex-col justify-between antialiased">
 
   <!-- --- GLOBAL NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-800 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
       <!-- Logo "rudarsharma." -->
@@ -72,12 +75,12 @@
     </div>
 
     <!-- Mobile Drawer Overlay -->
-    <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-900 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
+    <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-800 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
       <a href="/" class="block text-zinc-400 hover:text-white py-2">HOME</a>
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
-      <a href="/connect/" class="block text-orchid py-2">CONTACT</a>
+      <a href="/connect/" class="block text-cyber-cyan py-2">CONTACT</a>
     </div>
   </header>
 
@@ -94,76 +97,76 @@
 
         <!-- Typography Branded Heading -->
         <div class="space-y-4">
-          <h2 class="text-5xl font-sans font-extrabold text-white tracking-tight leading-none">
+          <h2 class="text-5xl sm:text-6xl font-sans font-extrabold text-white tracking-tight leading-none">
             Rudar <span class="font-serif italic text-orchid-light font-normal">Sharma.</span>
           </h2>
-          <span class="font-mono-tech text-[8px] text-orchid block tracking-[0.35em] uppercase font-bold">@CODEALCHEMIST_</span>
+          <span class="font-mono-tech text-[10px] sm:text-xs text-orchid block tracking-[0.35em] uppercase font-bold">@CODEALCHEMIST_</span>
         </div>
 
         <!-- Subtitle description bolding key entities -->
         <div>
-          <p class="text-zinc-500 text-sm max-w-sm leading-relaxed">
+          <p class="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-md">
             Building <strong class="text-white font-bold">HOOLLOW</strong>. Engineering the <strong class="text-white font-bold">Future of Robotics</strong>.
           </p>
         </div>
 
         <!-- Open, card-less edge-to-edge text links with generous vertical margins and orchid underlines -->
-        <div class="w-full space-y-2 pt-6 max-w-md">
+        <div class="w-full space-y-2 pt-6 max-w-lg">
           
           <!-- Link 1: Email -->
-          <a href="mailto:rudarsharma382@gmail.com" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
-            <div class="space-y-1">
-              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+          <a href="mailto:rudarsharma382@gmail.com" class="w-full py-8 border-b border-zinc-800 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-2">
+              <span class="text-xl md:text-2xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
                 Email Me
                 <!-- Custom smooth absolute orchid hover underline -->
                 <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">DIRECT INQUIRY</span>
+              <span class="font-mono-tech text-[8px] sm:text-[10px] text-zinc-500 block tracking-[0.15em] font-bold">DIRECT INQUIRY</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="text-zinc-650 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-2">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </div>
           </a>
 
           <!-- Link 2: Portfolio Home -->
-          <a href="/" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
-            <div class="space-y-1">
-              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+          <a href="/" class="w-full py-8 border-b border-zinc-800 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-2">
+              <span class="text-xl md:text-2xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
                 Portfolio Home
                 <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">RETURN TO BASE</span>
+              <span class="font-mono-tech text-[8px] sm:text-[10px] text-zinc-500 block tracking-[0.15em] font-bold">RETURN TO BASE</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="text-zinc-650 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-2">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </div>
           </a>
 
           <!-- Link 3: GitHub -->
-          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
-            <div class="space-y-1">
-              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full py-8 border-b border-zinc-800 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-2">
+              <span class="text-xl md:text-2xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
                 GitHub Profile
                 <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">VIEW REPOSITORIES</span>
+              <span class="font-mono-tech text-[8px] sm:text-[10px] text-zinc-500 block tracking-[0.15em] font-bold">VIEW REPOSITORIES</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="text-zinc-650 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-2">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </div>
           </a>
 
           <!-- Link 4: YouTube -->
-          <a href="https://www.youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
-            <div class="space-y-1">
-              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+          <a href="https://www.youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full py-8 border-b border-zinc-800 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-2">
+              <span class="text-xl md:text-2xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
                 YouTube Channel
                 <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">WATCH JOURNAL TUTORIALS</span>
+              <span class="font-mono-tech text-[8px] sm:text-[10px] text-zinc-500 block tracking-[0.15em] font-bold">WATCH JOURNAL TUTORIALS</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="text-zinc-655 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-2">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </div>
           </a>
 
@@ -174,7 +177,7 @@
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="py-12 px-6 relative z-10 bg-black text-center font-mono-tech text-[9px] text-zinc-600 border-t border-zinc-950">
+  <footer class="py-12 px-6 relative z-10 bg-black text-center font-mono-tech text-[10px] text-zinc-600 border-t border-zinc-850">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer. All connections active.</p>
