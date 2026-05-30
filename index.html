@@ -54,8 +54,9 @@
       <nav class="hidden md:flex items-center space-x-10 font-mono-tech text-[10px]">
         <a href="/" class="nav-link nav-link-underline text-white nav-link-active">HOME</a>
         <a href="/projects/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">PROJECTS</a>
-        <a href="/skills/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">SKILLS</a>
+        <a href="/stats/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">STATS</a>
         <a href="/milestones/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">MILESTONES</a>
+        <a href="/gallery/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">GALLERY</a>
         <a href="/connect/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">CONNECT</a>
       </nav>
 
@@ -76,8 +77,9 @@
     <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-950 bg-black/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
       <a href="/" class="block text-[#D6B4FC] py-2">HOME</a>
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">PROJECTS</a>
-      <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
+      <a href="/stats/" class="block text-zinc-400 hover:text-white py-2">STATS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">MILESTONES</a>
+      <a href="/gallery/" class="block text-zinc-400 hover:text-white py-2">GALLERY</a>
       <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONNECT</a>
     </div>
   </header>
@@ -106,24 +108,27 @@
           </div>
 
           <!-- Two borderless metadata blocks -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-zinc-950">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-zinc-950">
             <!-- Block 1 -->
-            <div class="space-y-2">
-              <span class="font-mono-tech text-[9px] text-zinc-500 block">IDENTITY</span>
+            <div class="editorial-card rounded-2xl p-6 space-y-2">
+              <span class="font-mono-tech text-[8px] text-zinc-500 block">IDENTITY</span>
               <h4 class="font-sans font-bold text-sm text-white">Rudar Sharma</h4>
               <p class="text-zinc-400 text-xs leading-relaxed mt-1">Class 10 Student &bull; Core Contributor at HOOLLOW</p>
             </div>
             <!-- Block 2 -->
-            <div class="space-y-2">
-              <span class="font-mono-tech text-[9px] text-zinc-500 block">ACADEMIC BACKGROUND</span>
+            <div class="editorial-card rounded-2xl p-6 space-y-2">
+              <span class="font-mono-tech text-[8px] text-zinc-500 block">ACADEMIC BACKGROUND</span>
               <h4 class="font-sans font-bold text-sm text-white">STEM Stream Student</h4>
               <p class="text-zinc-400 text-xs leading-relaxed mt-1">School of Specialized Excellence (SoSE), Delhi</p>
             </div>
           </div>
 
-          <!-- Minimalist Blockquote Vision Container -->
-          <div class="border-l border-zinc-800 pl-6 space-y-2 py-1">
-            <p class="text-zinc-400 text-xs leading-relaxed italic font-medium">
+          <!-- Minimalist Quotation Card (reconfigured double quote marks look) -->
+          <div class="editorial-card rounded-2xl p-8 relative flex flex-col justify-between">
+            <div class="text-[#D6B4FC] opacity-40 select-none leading-none">
+              <i data-lucide="quote" class="w-8 h-8"></i>
+            </div>
+            <p class="text-zinc-400 text-xs leading-relaxed italic font-medium pt-3">
               "Combining software, AI, and hardware engineering to crack IIT, build intelligent robotics, and innovate next-generation global solutions."
             </p>
           </div>
@@ -132,14 +137,14 @@
           <div class="space-y-8">
             <div class="flex flex-wrap gap-2">
               <span class="capsule-badge">Robotics & AI</span>
-              <span class="capsule-badge">Python Engineering</span>
-              <span class="capsule-badge">Frontend Dev</span>
-              <span class="capsule-badge">AI-Assisted Workflows</span>
+              <span class="capsule-badge">Python Dev</span>
+              <span class="capsule-badge">Embedded Systems</span>
+              <span class="capsule-badge">AI Workflows</span>
             </div>
 
             <div>
-              <a href="/projects/" class="circle-arrow-link">
-                <span>EXPLORE PROJECTS</span>
+              <a href="https://hollow.co" target="_blank" rel="noopener noreferrer" class="circle-arrow-link">
+                <span>EXPLORE HOOLLOW</span>
                 <span class="arrow-circle">
                   <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                 </span>

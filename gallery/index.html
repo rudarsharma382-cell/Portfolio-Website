@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudar Sharma | Visual Gallery</title>
+  <meta name="description" content="Explore visual journey, robotic kinematics diagrams, sensor nodes, and computational designs by Rudar Sharma.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lilac': '#D6B4FC',
+            'lilac-dark': '#C084FC',
+            'dark-bg': '#000000',
+            'dark-card': 'rgba(9, 9, 11, 0.45)',
+            'dark-border': 'rgba(24, 24, 27, 0.95)',
+          },
+          fontFamily: {
+            'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+            'mono-tech': ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons for Premium UI Visuals -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-black text-white selection:bg-[#D6B4FC] selection:text-black font-sans relative antialiased">
+
+  <!-- --- GLOBAL NAVIGATION BAR --- -->
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-950 bg-black/50 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+      
+      <!-- Logo "rudarsharma." -->
+      <a href="/" class="flex items-center space-x-2 group">
+        <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
+          rudarsharma<span class="text-[#D6B4FC] font-extrabold font-serif">.</span>
+        </span>
+      </a>
+
+      <!-- Center navigation links -->
+      <nav class="hidden md:flex items-center space-x-10 font-mono-tech text-[10px]">
+        <a href="/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">HOME</a>
+        <a href="/projects/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">PROJECTS</a>
+        <a href="/stats/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">STATS</a>
+        <a href="/milestones/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">MILESTONES</a>
+        <a href="/gallery/" class="nav-link nav-link-underline text-white nav-link-active">GALLERY</a>
+        <a href="/connect/" class="nav-link nav-link-underline text-zinc-400 hover:text-white transition-colors duration-300">CONNECT</a>
+      </nav>
+
+      <!-- Right side Pill Button -->
+      <div class="hidden sm:block">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-[#D6B4FC] hover:text-[#D6B4FC] transition-all duration-400 bg-zinc-950/20">
+          SUPPORT WORK
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-white focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-950 bg-black/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
+      <a href="/" class="block text-zinc-400 hover:text-white py-2">HOME</a>
+      <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">PROJECTS</a>
+      <a href="/stats/" class="block text-zinc-400 hover:text-white py-2">STATS</a>
+      <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">MILESTONES</a>
+      <a href="/gallery/" class="block text-[#D6B4FC] py-2">GALLERY</a>
+      <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONNECT</a>
+    </div>
+  </header>
+
+  <!-- --- MAIN GALLERY CONTENT CONTAINER --- -->
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12 space-y-12">
+    <section id="gallery" class="reveal-element md:pt-12 space-y-12">
+      
+      <!-- Title & Label Grid lines -->
+      <div class="space-y-2 border-b border-zinc-950 pb-6">
+        <span class="capsule-badge text-[9px] text-zinc-400 tracking-[0.2em] block">VISUAL JOURNEY</span>
+        <h2 class="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-white leading-tight">
+          The <span class="font-serif italic text-[#D6B4FC] font-medium">Gallery.</span>
+        </h2>
+      </div>
+
+      <!-- Modern masonry style visual card grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Piece 1: Robotics Map -->
+        <div class="editorial-card rounded-2xl p-8 flex flex-col justify-between group h-96 relative overflow-hidden bg-zinc-950/20">
+          <div class="absolute inset-0 select-none pointer-events-none opacity-[0.03] text-white flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+            <svg class="w-48 h-48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2v20M2 12h20M12 12l8-8M12 12L4 16"/>
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <span class="font-mono-tech text-[8px] text-[#D6B4FC] font-bold">01 // AUTONOMOUS SCHEMATIC</span>
+            <h3 class="text-xl font-sans font-extrabold text-white">Robotic Kinematics Map</h3>
+          </div>
+          <p class="text-zinc-500 text-xs leading-relaxed max-w-sm mt-auto">
+            Autonomous path rendering grid computing real-time coordinate transformations, loop joint vectors, and forward/inverse trajectory calculations.
+          </p>
+        </div>
+
+        <!-- Piece 2: Network telemetry -->
+        <div class="editorial-card rounded-2xl p-8 flex flex-col justify-between group h-96 relative overflow-hidden bg-zinc-950/20">
+          <div class="absolute inset-0 select-none pointer-events-none opacity-[0.03] text-white flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+            <svg class="w-48 h-48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M4 4h16v16H4zM9 9h6v6H9zM4 9h5M15 9h5M9 4v5M9 15v5M15 4v5M15 15v5"/>
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <span class="font-mono-tech text-[8px] text-[#D6B4FC] font-bold">02 // DDS TELEMETRY</span>
+            <h3 class="text-xl font-sans font-extrabold text-white">ROS2 Communication Node</h3>
+          </div>
+          <p class="text-zinc-500 text-xs leading-relaxed max-w-sm mt-auto">
+            Data Distribution Service (DDS) middleware compiled telemetry, routing sensor data loops, hardware feedback limits, and laser scan indices.
+          </p>
+        </div>
+
+        <!-- Piece 3: CPU schematic -->
+        <div class="editorial-card rounded-2xl p-8 flex flex-col justify-between group h-96 relative overflow-hidden bg-zinc-950/20">
+          <div class="absolute inset-0 select-none pointer-events-none opacity-[0.03] text-white flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+            <svg class="w-48 h-48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
+              <path d="M6 12h12M12 6v12M12 12l4 4"/>
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <span class="font-mono-tech text-[8px] text-[#D6B4FC] font-bold">03 // HARDWARE CAD</span>
+            <h3 class="text-xl font-sans font-extrabold text-white">Circuit Core Schematic</h3>
+          </div>
+          <p class="text-zinc-500 text-xs leading-relaxed max-w-sm mt-auto">
+            Eagle CAD schematics tracing Raspberry Pi edge compute logic gates, voltage rail bridges, logic converter ports, and optocoupler arrays.
+          </p>
+        </div>
+
+        <!-- Piece 4: Neural grid -->
+        <div class="editorial-card rounded-2xl p-8 flex flex-col justify-between group h-96 relative overflow-hidden bg-zinc-950/20">
+          <div class="absolute inset-0 select-none pointer-events-none opacity-[0.03] text-white flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+            <svg class="w-48 h-48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M2 20h20M5 17h14M8 14h8M11 11h2M12 2v6"/>
+            </svg>
+          </div>
+          <div class="space-y-2">
+            <span class="font-mono-tech text-[8px] text-[#D6B4FC] font-bold">04 // COMPUTER VISION</span>
+            <h3 class="text-xl font-sans font-extrabold text-white">Neural Compute Grid</h3>
+          </div>
+          <p class="text-zinc-500 text-xs leading-relaxed max-w-sm mt-auto">
+            Convolutional filter maps tracing edge extraction limits, autonomous obstacle thresholds, and classification probabilities in high-fps loops.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- --- FOOTER --- -->
+  <footer class="border-t border-zinc-950 py-12 px-6 relative z-10 bg-black mt-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono-tech text-[9px] text-zinc-600">
+      <div>
+        <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer.</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>BUILT WITH AI-ASSISTED WORKFLOWS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icon Renderer initialization script -->
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="/script.js"></script>
+</body>
+</html>

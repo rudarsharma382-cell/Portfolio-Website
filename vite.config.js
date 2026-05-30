@@ -7,8 +7,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects/index.html'),
-        skills: resolve(__dirname, 'skills/index.html'),
+        stats: resolve(__dirname, 'stats/index.html'),
         milestones: resolve(__dirname, 'milestones/index.html'),
+        gallery: resolve(__dirname, 'gallery/index.html'),
         connect: resolve(__dirname, 'connect/index.html'),
       }
     }

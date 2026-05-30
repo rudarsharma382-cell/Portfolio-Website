@@ -1,11 +1,11 @@
 /**
- * Rudar Sharma Portfolio - Multi-Page Interactions Engine
- * Coordinates scroll-triggered animations and mobile navbar drawer states.
+ * Rudar Sharma Portfolio - Multi-Page Screenshot-Precise Interactions Engine
+ * Coordinates scroll-triggered entrance reveals and mobile navbar drawer states.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- 1. REVEAL ENGINE (Scroll-triggered Entrance Animation) ---
+  // --- 1. REVEAL ENGINE (Entrance fade & slide-ups) ---
   const revealElements = document.querySelectorAll('.reveal-element');
   
   const revealCallback = (entries, observer) => {
@@ -27,44 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(element);
   });
 
-  // Automatically reveal hero sections immediately
-  const homeSection = document.querySelector('#home');
-  if (homeSection) {
-    setTimeout(() => {
-      homeSection.classList.add('revealed');
-    }, 100);
-  }
-
-  const projectsSection = document.querySelector('#projects');
-  if (projectsSection) {
-    setTimeout(() => {
-      projectsSection.classList.add('revealed');
-    }, 100);
-  }
-
-  const skillsSection = document.querySelector('#skills');
-  if (skillsSection) {
-    setTimeout(() => {
-      skillsSection.classList.add('revealed');
-    }, 100);
-  }
-
-  const milestonesSection = document.querySelector('#milestones');
-  if (milestonesSection) {
-    setTimeout(() => {
-      milestonesSection.classList.add('revealed');
-    }, 100);
-  }
-
-  const connectSection = document.querySelector('#connect');
-  if (connectSection) {
-    setTimeout(() => {
-      connectSection.classList.add('revealed');
-    }, 100);
-  }
+  // Automatically reveal active route sections immediately on load
+  const routeSelectors = ['#home', '#projects', '#skills', '#milestones', '#gallery', '#connect'];
+  
+  routeSelectors.forEach(selector => {
+    const section = document.querySelector(selector);
+    if (section) {
+      setTimeout(() => {
+        section.classList.add('revealed');
+      }, 100);
+    }
+  });
 
 
-  // --- 2. RESPONSIVE MOBILE NAVIGATION DRAWER CONTROLLER ---
+  // --- 2. RESPONSIVE MOBILE NAVIGATION DRAWER ---
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileDrawer = document.getElementById('mobile-drawer');
 
