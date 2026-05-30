@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rudar Sharma | Track Record</title>
+  <title>Rudar Sharma | Strategic Milestones</title>
   <meta name="description" content="Review career trajectory, academic achievements, tech content creator milestones, and certifications of Rudar Sharma.">
   
   <!-- Tailwind CSS CDN -->
@@ -15,14 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'cyber-cyan': '#00f5ff',
-            'cyber-blue': '#06b6d4',
-            'dark-bg': '#08080a',
-            'dark-card': '#111113',
-            'dark-border': 'rgba(39, 39, 42, 0.8)',
+            'orchid': '#C084FC',
+            'orchid-light': '#D6B4FC',
+            'dark-bg': '#000000',
+            'dark-border': 'rgba(39, 39, 42, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Playfair Display', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -36,16 +36,16 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased">
+<body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative antialiased">
 
   <!-- --- GLOBAL NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
       <!-- Logo "rudarsharma." -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
+          rudarsharma<span class="text-orchid font-extrabold">.</span>
         </span>
       </a>
 
@@ -60,7 +60,7 @@
 
       <!-- Right side Pill Button -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all duration-400 bg-zinc-900/40">
           SUPPORT WORK
         </a>
       </div>
@@ -76,172 +76,143 @@
       <a href="/" class="block text-zinc-400 hover:text-white py-2">HOME</a>
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
-      <a href="/milestones/" class="block text-cyber-cyan py-2">TRACK RECORD</a>
+      <a href="/milestones/" class="block text-orchid py-2">TRACK RECORD</a>
       <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONTACT</a>
     </div>
   </header>
 
   <!-- --- MAIN MILESTONES CONTENT CONTAINER --- -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12 space-y-12">
-    <section id="milestones" class="reveal-element md:pt-12 space-y-12">
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-16">
+    <section id="milestones" class="reveal-element space-y-16">
       
-      <!-- Title & Label Grid lines -->
-      <div class="space-y-3 border-b border-zinc-900 pb-6">
-        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-400 block">03 / STRATEGIC PATHWAY & MILESTONES</span>
-        <h2 class="text-4xl sm:text-6xl font-sans font-extrabold tracking-tight text-white leading-tight">
-          Track <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyber-cyan">Record.</span>
+      <!-- Title & Label Grid lines (Huge Premium Editorial Heading) -->
+      <div class="space-y-4 border-b border-zinc-900 pb-10">
+        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-500 block">03 / STRATEGIC PATHWAY & TRACK RECORD</span>
+        <h2 class="text-5xl sm:text-7xl font-sans font-extrabold tracking-tight text-white leading-tight">
+          Strategic <span class="font-serif italic text-orchid-light font-normal">Milestones.</span>
         </h2>
       </div>
 
-      <!-- Grid of Horizontal Row Bento Cards (Top Layout) -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Vertical timeline line down the screen, completely card-less -->
+      <div class="relative pl-8 sm:pl-16 space-y-20 border-l border-zinc-900 max-w-4xl pt-4 mx-auto md:mx-0">
         
         <!-- Milestone 1: Academic -->
-        <div class="bento-card rounded-2xl p-6 flex flex-col justify-between group h-[380px] relative">
-          <div class="tech-corner-tl"></div>
-          <div class="space-y-4">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-cyan-950/40 border border-cyan-800/30 text-[8px] font-mono-tech text-cyber-cyan rounded-md">01 // ACADEMIC</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">2025</span>
+        <div class="relative space-y-4 group">
+          <!-- Timeline Circle Indicator -->
+          <div class="absolute -left-[37px] sm:-left-[69px] top-1.5 w-2.5 h-2.5 rounded-full border border-orchid bg-black shadow-[0_0_8px_#C084FC]"></div>
+          
+          <div class="space-y-3 pl-2">
+            <!-- Uppercase orchid-colored date sitting directly in the open -->
+            <div class="font-mono-tech text-[9px] text-orchid font-bold tracking-[0.25em]">
+              2025 &bull; ACADEMIC STREAM SPECIALIZATION
             </div>
             
-            <div class="space-y-1">
-              <h3 class="text-xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300 leading-tight">STEM Elite Program</h3>
-              <p class="text-zinc-500 text-[10px] font-mono-tech">SoSE, Delhi</p>
-            </div>
+            <h3 class="font-sans font-extrabold text-3xl sm:text-4xl text-white group-hover:text-orchid transition-colors duration-300 leading-tight">STEM Elite Program at SoSE</h3>
+            <p class="font-mono-tech text-[8px] text-zinc-500 block">SCHOOL OF SPECIALIZED EXCELLENCE &bull; DELHI</p>
             
-            <p class="text-zinc-400 text-xs leading-relaxed">
-              Selected via highly competitive examinations for the specialized STEM stream at the School of Specialized Excellence. Intensive training in physics, computational analysis, and microcontroller logic.
+            <p class="text-zinc-400 text-sm leading-relaxed pt-2 max-w-2xl">
+              Selected through highly competitive statewide entrance examinations for the specialized STEM stream. Advanced studies focusing on microprocessors, electronics logic gates, spatial computation, and algebraic structures.
             </p>
-          </div>
-
-          <div class="border-t border-zinc-900 pt-4 flex items-center justify-between mt-auto">
-            <span class="font-mono-tech text-[8px] text-zinc-600">STATUS // ENROLLED</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="graduation-cap" class="w-4 h-4"></i>
-            </div>
           </div>
         </div>
 
         <!-- Milestone 2: Google Certifications -->
-        <div class="bento-card rounded-2xl p-6 flex flex-col justify-between group h-[380px] relative">
-          <div class="space-y-4">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-cyan-950/40 border border-cyan-800/30 text-[8px] font-mono-tech text-cyber-cyan rounded-md">02 // GOOGLE</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">2026</span>
+        <div class="relative space-y-4 group">
+          <!-- Timeline Circle Indicator -->
+          <div class="absolute -left-[37px] sm:-left-[69px] top-1.5 w-2.5 h-2.5 rounded-full border border-orchid bg-black shadow-[0_0_8px_#C084FC]"></div>
+          
+          <div class="space-y-3 pl-2">
+            <div class="font-mono-tech text-[9px] text-orchid font-bold tracking-[0.25em]">
+              2026 &bull; PROFESSIONAL ACCREDITATIONS
             </div>
             
-            <div class="space-y-1">
-              <h3 class="text-xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300 leading-tight">AI & Prompting</h3>
-              <p class="text-zinc-500 text-[10px] font-mono-tech">Google Accredited</p>
-            </div>
+            <h3 class="font-sans font-extrabold text-3xl sm:text-4xl text-white group-hover:text-orchid transition-colors duration-300 leading-tight">Google AI & Prompting Credentials</h3>
+            <p class="font-mono-tech text-[8px] text-zinc-500 block">GOOGLE DEVELOPER ECOSYSTEM</p>
             
-            <p class="text-zinc-400 text-xs leading-relaxed">
-              Earned verified professional credentials in Google AI Essentials & Google Prompting Essentials. Mastering LLM engineering architectures, dynamic context manipulation, and AI tool integrations.
+            <p class="text-zinc-400 text-sm leading-relaxed pt-2 max-w-2xl">
+              Completed professional validation courses: Google AI Essentials & Google Prompting Essentials. Certified in context-window engineering, zero-shot/few-shot system scripting, and generative pipeline workflows.
             </p>
-          </div>
-
-          <div class="border-t border-zinc-900 pt-4 flex items-center justify-between mt-auto">
-            <span class="font-mono-tech text-[8px] text-zinc-600">STATUS // CERTIFIED</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="award" class="w-4 h-4"></i>
-            </div>
           </div>
         </div>
 
         <!-- Milestone 3: Python ML -->
-        <div class="bento-card rounded-2xl p-6 flex flex-col justify-between group h-[380px] relative">
-          <div class="space-y-4">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-cyan-950/40 border border-cyan-800/30 text-[8px] font-mono-tech text-cyber-cyan rounded-md">03 // COMPUTATION</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">2026</span>
-            </div>
-            
-            <div class="space-y-1">
-              <h3 class="text-xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300 leading-tight">Machine Learning</h3>
-              <p class="text-zinc-500 text-[10px] font-mono-tech">Python Systems</p>
-            </div>
-            
-            <p class="text-zinc-400 text-xs leading-relaxed">
-              Acquired comprehensive certification in Machine Learning workflows. Specialized in data pipeline constructions, mathematical regressions, linear estimators, and neural model deployments.
-            </p>
-          </div>
-
-          <div class="border-t border-zinc-900 pt-4 flex items-center justify-between mt-auto">
-            <span class="font-mono-tech text-[8px] text-zinc-600">STATUS // DEPLOYED</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="binary" class="w-4 h-4"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 4: Youtube Creators -->
-        <div class="bento-card rounded-2xl p-6 flex flex-col justify-between group h-[380px] relative">
-          <div class="tech-corner-br"></div>
-          <div class="space-y-4">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-cyan-950/40 border border-cyan-800/30 text-[8px] font-mono-tech text-cyber-cyan rounded-md">04 // INFLUENCE</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">2026</span>
-            </div>
-            
-            <div class="space-y-1">
-              <h3 class="text-xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300 leading-tight">CodeAlchemist_</h3>
-              <p class="text-zinc-500 text-[10px] font-mono-tech">YouTube platform</p>
-            </div>
-            
-            <p class="text-zinc-400 text-xs leading-relaxed">
-              Founding an educational coding tutorial and robotics engineering channel. Sharing modular application structures, hardware circuit hacks, and clean-code architectural blueprints.
-            </p>
-          </div>
-
-          <div class="border-t border-zinc-900 pt-4 flex items-center justify-between mt-auto">
-            <span class="font-mono-tech text-[8px] text-zinc-600">STATUS // BROADCASTING</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="play" class="w-4 h-4"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Layout: Centered "SECURE INBOUND TERMINAL" Card block (Spans all columns) -->
-        <div class="md:col-span-4 bento-card rounded-2xl p-8 sm:p-12 text-center relative flex flex-col items-center space-y-6 overflow-hidden max-w-3xl mx-auto w-full mt-6">
-          <div class="absolute inset-0 bg-gradient-to-b from-cyan-950/5 to-transparent pointer-events-none"></div>
+        <div class="relative space-y-4 group">
+          <!-- Timeline Circle Indicator -->
+          <div class="absolute -left-[37px] sm:-left-[69px] top-1.5 w-2.5 h-2.5 rounded-full border border-orchid bg-black shadow-[0_0_8px_#C084FC]"></div>
           
-          <div class="flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-cyber-cyan animate-pulse shadow-[0_0_8px_#00f5ff]"></span>
-            <span class="font-mono-tech text-[9px] text-zinc-500 tracking-[0.2em]">SECURE INBOUND TERMINAL</span>
+          <div class="space-y-3 pl-2">
+            <div class="font-mono-tech text-[9px] text-orchid font-bold tracking-[0.25em]">
+              2026 &bull; COMPUTATIONAL MATHEMATICS
+            </div>
+            
+            <h3 class="font-sans font-extrabold text-3xl sm:text-4xl text-white group-hover:text-orchid transition-colors duration-300 leading-tight">Machine Learning using Python</h3>
+            <p class="font-mono-tech text-[8px] text-zinc-500 block">SYSTEM CONTROLLER SPECIALIZATION</p>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed pt-2 max-w-2xl">
+              Earned comprehensive systems accreditation for Machine Learning using Python. Specialized in feature alignments, multi-variable linear regressions, classifications, and basic computer vision models.
+            </p>
           </div>
+        </div>
 
-          <h3 class="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-white leading-tight">
-            Let's build the <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyber-cyan">future together.</span>
-          </h3>
-
-          <p class="text-zinc-400 text-sm max-w-lg leading-relaxed mx-auto">
-            Initiate communication channels to collaborate on intelligent robotics control design, full-stack systems architecture, or deep learning model development.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full justify-center">
-            <a href="https://github.com/rudarsharma382-cell" target="_blank" class="magnetic-btn px-6 py-3 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all bg-zinc-950/40 flex items-center justify-center space-x-2">
-              <i data-lucide="github" class="w-4 h-4"></i>
-              <span>EXPLORE GITHUB PROFILE</span>
-            </a>
-            <a href="https://youtube.com/@CodeAlchemist_" target="_blank" class="magnetic-btn px-6 py-3 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all bg-zinc-950/40 flex items-center justify-center space-x-2">
-              <i data-lucide="youtube" class="w-4 h-4"></i>
-              <span>WATCH JOURNEY ON YOUTUBE</span>
-            </a>
-          </div>
-
-          <div class="pt-6 font-mono-tech text-[9px] text-zinc-600 border-t border-zinc-900/60 w-full flex items-center justify-center space-x-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-            <span>SYSTEMS READY // AVAILABLE FOR STRATEGIC PROJECTS</span>
+        <!-- Milestone 4: CodeAlchemist_ -->
+        <div class="relative space-y-4 group">
+          <!-- Timeline Circle Indicator -->
+          <div class="absolute -left-[37px] sm:-left-[69px] top-1.5 w-2.5 h-2.5 rounded-full border border-orchid bg-black shadow-[0_0_8px_#C084FC]"></div>
+          
+          <div class="space-y-3 pl-2">
+            <div class="font-mono-tech text-[9px] text-orchid font-bold tracking-[0.25em]">
+              2026 &bull; INFLUENCE & CREATIVE DEVELOPMENT
+            </div>
+            
+            <h3 class="font-sans font-extrabold text-3xl sm:text-4xl text-white group-hover:text-orchid transition-colors duration-300 leading-tight">CodeAlchemist_ Creator Channel</h3>
+            <p class="font-mono-tech text-[8px] text-zinc-500 block">YOUTUBE TUTORIAL & R&D PLATFORM</p>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed pt-2 max-w-2xl">
+              Founding an educational coding ecosystem. Designing tutorial workflows demonstrating modular architecture concepts, custom microcontroller hardware setups, and clean coding frameworks.
+            </p>
           </div>
         </div>
 
       </div>
+
+      <!-- Bottom Layout: Card-less Centered "SECURE INBOUND TERMINAL" (Floating directly in layout) -->
+      <div class="border-t border-zinc-900 pt-16 flex flex-col items-center space-y-8 text-center max-w-3xl mx-auto w-full">
+        
+        <div class="flex items-center space-x-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-orchid animate-pulse shadow-[0_0_8px_#C084FC]"></span>
+          <span class="font-mono-tech text-[9px] text-zinc-500 tracking-[0.2em]">SECURE INBOUND LINK</span>
+        </div>
+
+        <h3 class="text-4xl sm:text-5xl font-sans font-extrabold tracking-tight text-white leading-tight">
+          Let's build the <span class="font-serif italic text-orchid-light font-normal">future together.</span>
+        </h3>
+
+        <p class="text-zinc-400 text-sm max-w-lg leading-relaxed mx-auto">
+          Initiate direct channels to coordinate on high-performance robotics controls, complex systems integration, or deep learning model training workflows.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full justify-center">
+          <a href="https://github.com/rudarsharma382-cell" target="_blank" class="magnetic-btn px-6 py-3 border border-zinc-900 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all bg-zinc-950/20 flex items-center justify-center space-x-2">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i>
+            <span>EXPLORE GITHUB PROFILE</span>
+          </a>
+          <a href="https://youtube.com/@CodeAlchemist_" target="_blank" class="magnetic-btn px-6 py-3 border border-zinc-900 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all bg-zinc-950/20 flex items-center justify-center space-x-2">
+            <i data-lucide="youtube" class="w-3.5 h-3.5"></i>
+            <span>WATCH JOURNEY ON YOUTUBE</span>
+          </a>
+        </div>
+
+        <div class="pt-8 font-mono-tech text-[8px] text-zinc-500 w-full flex items-center justify-center space-x-2">
+          <span class="w-1 h-1 rounded-full bg-emerald-500"></span>
+          <span>AVAILABLE FOR STRATEGIC PROJECTS</span>
+        </div>
+      </div>
+
     </section>
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="border-t border-zinc-950 py-12 px-6 relative z-10 bg-black mt-20">
+  <footer class="border-t border-zinc-950 py-16 px-6 relative z-10 bg-black mt-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono-tech text-[9px] text-zinc-600">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer.</p>

@@ -15,14 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'cyber-cyan': '#00f5ff',
-            'cyber-blue': '#06b6d4',
-            'dark-bg': '#08080a',
-            'dark-card': '#111113',
-            'dark-border': 'rgba(39, 39, 42, 0.8)',
+            'orchid': '#C084FC',
+            'orchid-light': '#D6B4FC',
+            'dark-bg': '#000000',
+            'dark-border': 'rgba(39, 39, 42, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Playfair Display', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -36,16 +36,16 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased">
+<body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative antialiased">
 
-  <!-- --- 1. HIGH-TECH STICKY NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
+  <!-- --- 1. STICKY NAVIGATION BAR WITH GLASSMORPHISM --- -->
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
-      <!-- Logo "rudarsharma." with cyber dot -->
+      <!-- Logo "rudarsharma." with orchid dot -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
+          rudarsharma<span class="text-orchid font-extrabold">.</span>
         </span>
       </a>
 
@@ -60,7 +60,7 @@
 
       <!-- Right side CTA -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all duration-400 bg-zinc-900/10">
           SUPPORT WORK
         </a>
       </div>
@@ -73,7 +73,7 @@
 
     <!-- Mobile Drawer Overlay -->
     <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-900 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
-      <a href="/" class="block text-cyber-cyan py-2">HOME</a>
+      <a href="/" class="block text-orchid py-2">HOME</a>
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
@@ -81,98 +81,92 @@
     </div>
   </header>
 
-  <!-- --- MAIN BENTO CONTENT CONTAINER --- -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12">
+  <!-- --- MAIN EXPANSIVE EDITORIAL LAYOUT --- -->
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24">
     <section id="home" class="reveal-element md:pt-4">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         
-        <!-- LEFT MAIN CARD (Enclosed bento - spans 8 cols) -->
-        <div class="lg:col-span-8 bento-card rounded-2xl p-8 sm:p-12 flex flex-col justify-between space-y-12 relative">
-          <div class="tech-corner-tl"></div>
+        <!-- LEFT COLUMN (Spans 8 cols) - Spacious Editorial -->
+        <div class="lg:col-span-8 flex flex-col space-y-16">
           
-          <!-- Top Tagline -->
+          <!-- Top minimal tagline -->
           <div class="flex items-center space-x-3">
-            <span class="px-2 py-0.5 bg-cyan-950/40 border border-cyan-800/40 text-[9px] font-mono-tech text-cyber-cyan rounded-md pulse-glow-indicator">STATUS: ONLINE</span>
-            <p class="font-mono-tech text-[10px] text-zinc-500">Portfolio of Rudar Sharma</p>
+            <span class="px-2 py-0.5 bg-purple-950/20 border border-purple-900/30 text-[8px] font-mono-tech text-orchid rounded-md">STATUS // ACTIVE</span>
+            <p class="font-mono-tech text-[9px] text-zinc-500">SYSTEM INTEL DIRECTORY</p>
           </div>
 
-          <!-- Sweeping Display Heading (Big, Professional Font) -->
-          <div class="space-y-6">
-            <h1 class="text-4xl sm:text-6xl font-sans font-extrabold tracking-tight leading-[1.08] text-white">
+          <!-- Sweeping Display Heading (Huge & Bold Editorial font treatment) -->
+          <div class="space-y-8">
+            <h1 class="text-5xl sm:text-7xl font-sans font-extrabold tracking-tight leading-[1.05] text-white">
               Engineering the <br>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-400 to-indigo-500">
+              <span class="font-serif italic text-orchid-light font-normal">
                 Future of Robotics.
               </span>
             </h1>
-            <p class="text-zinc-400 text-sm max-w-xl leading-relaxed">
+            <p class="text-zinc-400 text-base max-w-2xl leading-relaxed">
               Combining software architectures, neural models, and electronics hardware engineering to create intelligent autonomous robots and develop robust full-stack applications.
             </p>
           </div>
 
-          <!-- 3-Column Metadata Grid Lines (Separated by fine borders) -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-zinc-800">
-            <!-- Block 1 -->
-            <div class="space-y-1.5">
-              <span class="font-mono-tech text-[9px] text-zinc-500 block">01 / IDENTITY</span>
+          <!-- 3-Column Metadata Blocks side-by-side (NO boxes, fine borders) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-zinc-900">
+            <!-- Column 1 -->
+            <div class="space-y-2">
+              <span class="font-mono-tech text-[8px] text-zinc-500 block">01 / IDENTITY</span>
               <h4 class="font-sans font-extrabold text-sm text-white">Rudar Sharma</h4>
               <p class="text-zinc-500 text-xs leading-normal mt-1">Class 10 Student &bull; Core Contributor at HOOLLOW</p>
             </div>
-            <!-- Block 2 -->
-            <div class="space-y-1.5 border-t md:border-t-0 md:border-l border-zinc-800 pt-4 md:pt-0 md:pl-6">
-              <span class="font-mono-tech text-[9px] text-zinc-500 block">02 / EDUCATION</span>
-              <h4 class="font-sans font-extrabold text-sm text-white">STEM Stream Student</h4>
+            <!-- Column 2 -->
+            <div class="space-y-2 border-t md:border-t-0 md:border-l border-zinc-900 pt-6 md:pt-0 md:pl-8">
+              <span class="font-mono-tech text-[8px] text-zinc-500 block">02 / EDUCATION</span>
+              <h4 class="font-sans font-extrabold text-sm text-white">STEM Elite Program</h4>
               <p class="text-zinc-500 text-xs leading-normal mt-1">School of Specialized Excellence (SoSE), Delhi</p>
             </div>
-            <!-- Block 3 -->
-            <div class="space-y-1.5 border-t md:border-t-0 md:border-l border-zinc-800 pt-4 md:pt-0 md:pl-6">
-              <span class="font-mono-tech text-[9px] text-zinc-500 block">03 / CORE MISSION</span>
-              <p class="text-zinc-400 text-xs italic font-medium leading-relaxed mt-1">
+            <!-- Column 3 -->
+            <div class="space-y-2 border-t md:border-t-0 md:border-l border-zinc-900 pt-6 md:pt-0 md:pl-8">
+              <span class="font-mono-tech text-[8px] text-zinc-500 block">03 / CORE MISSION</span>
+              <p class="text-zinc-400 text-xs italic leading-relaxed mt-1">
                 "Combining software, AI, and hardware engineering to crack IIT, build intelligent robotics, and innovate next-generation global solutions."
               </p>
             </div>
           </div>
 
-          <!-- Core Technical Pillars stacked below -->
-          <div class="space-y-3 pt-4">
-            <span class="font-mono-tech text-[9px] text-zinc-500 block font-bold">CORE TECHNICAL PILLARS</span>
-            <div class="flex flex-wrap gap-2.5">
-              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Robotics & AI</span>
-              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Python Engineering</span>
-              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Frontend Dev</span>
-              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">AI-Assisted Workflows</span>
-              <span class="px-3.5 py-1.5 bg-zinc-950 border border-zinc-800 text-[10px] font-mono-tech rounded-lg hover:border-cyber-cyan hover:text-white transition-colors duration-300">Flutter & Mobile</span>
+          <!-- Technical Pillars stacked in the open -->
+          <div class="space-y-4 pt-4 border-t border-zinc-900">
+            <span class="font-mono-tech text-[8px] text-zinc-500 block font-bold">CORE TECHNICAL PILLARS</span>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 border border-zinc-900 text-[9px] font-mono-tech rounded-full hover:border-orchid hover:text-white transition-colors duration-300 bg-zinc-950/20">Robotics & AI</span>
+              <span class="px-4 py-2 border border-zinc-900 text-[9px] font-mono-tech rounded-full hover:border-orchid hover:text-white transition-colors duration-300 bg-zinc-950/20">Python Engineering</span>
+              <span class="px-4 py-2 border border-zinc-900 text-[9px] font-mono-tech rounded-full hover:border-orchid hover:text-white transition-colors duration-300 bg-zinc-950/20">Frontend Dev</span>
+              <span class="px-4 py-2 border border-zinc-900 text-[9px] font-mono-tech rounded-full hover:border-orchid hover:text-white transition-colors duration-300 bg-zinc-950/20">AI-Assisted Workflows</span>
+              <span class="px-4 py-2 border border-zinc-900 text-[9px] font-mono-tech rounded-full hover:border-orchid hover:text-white transition-colors duration-300 bg-zinc-950/20">Flutter & Mobile</span>
             </div>
           </div>
         </div>
 
-        <!-- RIGHT BENTO COLUMN (Avatar frame, Terminal, Stats card - spans 4 cols) -->
-        <div class="lg:col-span-4 flex flex-col justify-between gap-6">
+        <!-- RIGHT COLUMN (Spans 4 cols) - Card-less floating blocks -->
+        <div class="lg:col-span-4 flex flex-col space-y-12 lg:space-y-16">
           
-          <!-- Large vertical framed layout box with avatar -->
-          <div class="bento-card rounded-2xl p-6 flex flex-col items-center justify-center relative aspect-square w-full max-w-[340px] mx-auto">
-            <div class="tech-corner-br"></div>
+          <!-- Square Framed Portrait (No bounding gray card background) -->
+          <div class="relative w-full aspect-square max-w-[320px] mx-auto flex items-center justify-center p-2 border border-zinc-900 bg-black/40">
+            <!-- Fine scan line overlay -->
+            <div class="avatar-scan-overlay"></div>
             
-            <div class="relative w-full h-full rounded-xl overflow-hidden border border-zinc-800 bg-black flex items-center justify-center p-2">
-              <!-- Scan line overlay -->
-              <div class="avatar-scan-overlay"></div>
-              
-              <!-- Robotics Custom Avatar -->
-              <img src="/robotics_avatar.png" alt="Rudar Sharma Robotics Avatar" class="w-full h-full object-cover rounded-lg filter grayscale hover:grayscale-0 transition-all duration-500 opacity-90">
-              
-              <!-- Absolute Floating tag inside frame bottom left -->
-              <div class="absolute bottom-4 left-4 border border-zinc-800/80 bg-black/90 px-3.5 py-2 rounded-xl flex items-center space-x-2">
-                <span class="w-2 h-2 rounded-full bg-cyber-cyan shadow-[0_0_8px_#00f5ff]"></span>
-                <div>
-                  <span class="font-mono-tech text-[7px] text-zinc-500 block leading-none">TENURE</span>
-                  <span class="text-white font-sans font-extrabold text-[10px] tracking-tight block mt-0.5">1.7+ YRS</span>
-                </div>
+            <img src="/robotics_avatar.png" alt="Rudar Sharma Robotics Graphic" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500 opacity-80">
+            
+            <!-- Absolute Floating Tag in open layout -->
+            <div class="absolute bottom-4 left-4 border border-zinc-900 bg-black/90 px-3 py-1.5 rounded-md flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-orchid shadow-[0_0_8px_#C084FC]"></span>
+              <div>
+                <span class="font-mono-tech text-[6px] text-zinc-500 block leading-none">TENURE</span>
+                <span class="text-white font-sans font-extrabold text-[9px] block mt-0.5">1.7+ YEARS</span>
               </div>
             </div>
           </div>
 
-          <!-- Dynamic Terminal Logs Simulator -->
-          <div class="bento-card rounded-2xl p-5 font-mono-tech text-[9px] text-zinc-500 h-28 overflow-hidden flex flex-col justify-end space-y-1">
-            <div id="terminal-cursor" class="text-cyber-cyan flex items-center space-x-1">
+          <!-- Dynamic Terminal Logs Simulator (Card-less, sits in open space) -->
+          <div class="font-mono-tech text-[9px] text-zinc-500 h-28 flex flex-col justify-end space-y-2 border-t border-zinc-900 pt-6">
+            <div class="text-orchid flex items-center space-x-1">
               <span>&gt;</span>
               <span id="log-text">Robotics kernel system initialized...</span>
             </div>
@@ -180,15 +174,15 @@
             <div class="text-zinc-600">&bull; STEM credentials validated successfully.</div>
           </div>
 
-          <!-- 20+ Global Certifications stats block card -->
-          <div class="bento-card rounded-2xl p-6 relative flex items-center justify-between">
+          <!-- Certifications open layout counter -->
+          <div class="flex items-center justify-between border-t border-zinc-900 pt-8 pb-4">
             <div>
-              <h3 class="text-4xl font-sans font-extrabold text-white tracking-tight leading-none">20+</h3>
-              <span class="font-mono-tech text-[8px] text-cyber-cyan tracking-wider block mt-2">GLOBAL CERTIFICATIONS</span>
-              <p class="text-zinc-500 text-xs mt-1.5 leading-snug">Google, Microsoft, IBM, Cisco Systems verified.</p>
+              <h3 class="text-5xl font-sans font-extrabold text-white tracking-tight leading-none">20+</h3>
+              <span class="font-mono-tech text-[8px] text-orchid tracking-wider block mt-2">GLOBAL CREDENTIALS</span>
+              <p class="text-zinc-500 text-xs mt-1 leading-snug">Google, Microsoft, IBM, Cisco verified.</p>
             </div>
-            <div class="p-3 bg-zinc-950 border border-zinc-800 rounded-xl text-zinc-400">
-              <i data-lucide="award" class="w-6 h-6"></i>
+            <div class="p-3 border border-zinc-900 rounded-full text-zinc-500">
+              <i data-lucide="award" class="w-5 h-5"></i>
             </div>
           </div>
 
@@ -199,7 +193,7 @@
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="border-t border-zinc-900 py-12 px-6 relative z-10 bg-black mt-20">
+  <footer class="border-t border-zinc-950 py-16 px-6 relative z-10 bg-black mt-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono-tech text-[9px] text-zinc-600">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer.</p>

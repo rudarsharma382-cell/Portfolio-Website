@@ -15,14 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'cyber-cyan': '#00f5ff',
-            'cyber-blue': '#06b6d4',
-            'dark-bg': '#08080a',
-            'dark-card': '#111113',
-            'dark-border': 'rgba(39, 39, 42, 0.8)',
+            'orchid': '#C084FC',
+            'orchid-light': '#D6B4FC',
+            'dark-bg': '#000000',
+            'dark-border': 'rgba(39, 39, 42, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Playfair Display', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -36,16 +36,16 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased">
+<body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative antialiased">
 
   <!-- --- GLOBAL NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
       <!-- Logo "rudarsharma." -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
+          rudarsharma<span class="text-orchid font-extrabold">.</span>
         </span>
       </a>
 
@@ -60,7 +60,7 @@
 
       <!-- Right side Pill Button -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all duration-400 bg-zinc-900/40">
           SUPPORT WORK
         </a>
       </div>
@@ -74,7 +74,7 @@
     <!-- Mobile Drawer Overlay -->
     <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-900 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
       <a href="/" class="block text-zinc-400 hover:text-white py-2">HOME</a>
-      <a href="/projects/" class="block text-cyber-cyan py-2">EXPERIENCE</a>
+      <a href="/projects/" class="block text-orchid py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
       <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONTACT</a>
@@ -82,102 +82,85 @@
   </header>
 
   <!-- --- MAIN PROJECTS CONTENT CONTAINER --- -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12 space-y-8">
-    <section id="projects" class="reveal-element md:pt-12 space-y-8">
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-16">
+    <section id="projects" class="reveal-element space-y-16">
       
-      <!-- Title & Label Grid lines -->
-      <div class="space-y-3 border-b border-zinc-900 pb-6">
-        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-400 block">01 / EXPERIENCE & PRODUCTION</span>
-        <h2 class="text-4xl sm:text-6xl font-sans font-extrabold tracking-tight text-white leading-tight">
-          Selected <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyber-cyan">Ventures.</span>
+      <!-- Title & Label Grid lines (Huge Premium Editorial Heading) -->
+      <div class="space-y-4 border-b border-zinc-900 pb-10">
+        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-500 block">01 / PRODUCTION PATHWAY & EXPERIENCE</span>
+        <h2 class="text-5xl sm:text-7xl font-sans font-extrabold tracking-tight text-white leading-tight">
+          Selected <span class="font-serif italic text-orchid-light font-normal">Ventures.</span>
         </h2>
       </div>
 
-      <!-- Bento Grid Cards side-by-side -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Spacious Wide Layout Rows (Spanning elegantly, Separated by fine lines) -->
+      <div class="flex flex-col">
         
-        <!-- Card 1: HOOLLOW (Startup) -->
-        <div class="bento-card rounded-2xl p-8 flex flex-col justify-between group h-[400px] relative">
-          <div class="space-y-6">
-            <!-- Header elements -->
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-cyan-950/40 border border-cyan-800/30 text-[9px] font-mono-tech text-cyber-cyan rounded-md">STARTUP CONTRIBUTOR</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">2026 - PRESENT</span>
-            </div>
-            
-            <div class="space-y-2">
-              <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300">HOOLLOW</h3>
-              <p class="text-zinc-500 text-xs font-mono-tech mt-1">Website Development & Maintenance</p>
-            </div>
-            
-            <!-- Bullet points with custom list styling -->
-            <ul class="space-y-3.5 pt-2">
-              <li class="flex items-start space-x-2.5 text-zinc-400 text-xs leading-relaxed">
-                <span class="text-cyber-cyan font-bold mt-0.5">&bull;</span>
-                <span>Developed & maintained company websites, improved performance & user experience, integrated modern functionalities.</span>
-              </li>
-            </ul>
+        <!-- Project 1: HOOLLOW -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column: Title & Meta (Spans 5 cols) -->
+          <div class="md:col-span-5 space-y-3">
+            <span class="px-2.5 py-0.5 bg-purple-950/20 border border-purple-900/30 text-[8px] font-mono-tech text-orchid rounded-md">STARTUP CONTRIBUTOR</span>
+            <h3 class="text-4xl sm:text-5xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 italic-hover">HOOLLOW</h3>
+            <div class="font-mono-tech text-[8px] text-zinc-500 block pt-1">WEBSITE DEVELOPMENT &bull; 2026 - PRESENT</div>
           </div>
-
-          <!-- Bottom micro label -->
-          <div class="flex items-center justify-between border-t border-zinc-900 pt-5 mt-6">
-            <span class="font-mono-tech text-[8px] text-zinc-600">ROLE_IDENTIFIER // WEB_ENGINEER</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="external-link" class="w-4 h-4"></i>
+          
+          <!-- Right Column: Description & Action (Spans 7 cols) -->
+          <div class="md:col-span-7 space-y-6 md:pl-6">
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Developed and maintained key corporate web resources, resolving latency bottlenecks, implementing modern client interfaces, and integrating dynamic performance controllers.
+            </p>
+            <div class="pt-2">
+              <a href="https://hoollow.com" target="_blank" class="inline-flex items-center space-x-2 text-[10px] font-mono-tech text-orchid hover:text-white transition-colors duration-300">
+                <span>EXPLORE CONTRIBUTION</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Card 2: Amazon Clone -->
-        <div class="bento-card rounded-2xl p-8 flex flex-col justify-between group h-[400px] relative">
-          <div class="space-y-6">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-[9px] font-mono-tech text-zinc-400 rounded-md">FRONTEND CLONE</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">PRODUCTION</span>
-            </div>
-
-            <div class="space-y-2">
-              <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300">Amazon Clone</h3>
-              <p class="text-zinc-500 text-xs font-mono-tech mt-1">HTML5 &bull; CSS3 &bull; JavaScript</p>
-            </div>
-
-            <p class="text-zinc-400 text-xs leading-relaxed pt-2">
-              A responsive, visually precise frontend UI reconstruction of the Amazon dashboard platform using advanced flexbox/grid layout mechanics and responsive controls.
-            </p>
+        <!-- Project 2: Amazon Clone -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column: Title & Meta -->
+          <div class="md:col-span-5 space-y-3">
+            <span class="px-2.5 py-0.5 border border-zinc-800 text-[8px] font-mono-tech text-zinc-500 rounded-md">FRONTEND CLONE</span>
+            <h3 class="text-4xl sm:text-5xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300">Amazon Clone</h3>
+            <div class="font-mono-tech text-[8px] text-zinc-500 block pt-1">HTML5 &bull; CSS3 &bull; JAVASCRIPT</div>
           </div>
-
-          <!-- Bottom elements -->
-          <div class="flex items-center justify-between border-t border-zinc-900 pt-5 mt-6">
-            <span class="font-mono-tech text-[8px] text-zinc-600">REPOS_KEY // AMAZON_FRONTEND</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="github" class="w-4 h-4"></i>
+          
+          <!-- Right Column: Description & Action -->
+          <div class="md:col-span-7 space-y-6 md:pl-6">
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              A high-fidelity replica of the Amazon dashboard ecosystem built with pure CSS grids, sophisticated flex alignments, and robust media query sets for cross-device consistency.
+            </p>
+            <div class="pt-2">
+              <a href="https://github.com/rudarsharma382-cell" target="_blank" class="inline-flex items-center space-x-2 text-[10px] font-mono-tech text-orchid hover:text-white transition-colors duration-300">
+                <span>EXPLORE CONTRIBUTION</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Card 3: Python Bank Simulator -->
-        <div class="bento-card rounded-2xl p-8 flex flex-col justify-between group h-[400px] relative">
-          <div class="space-y-6">
-            <div class="flex items-start justify-between">
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-[9px] font-mono-tech text-zinc-400 rounded-md">SYSTEM SIMULATOR</span>
-              <span class="text-zinc-600 font-mono-tech text-[9px]">BACKEND CORE</span>
-            </div>
-
-            <div class="space-y-2">
-              <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors duration-300">Bank Simulator</h3>
-              <p class="text-zinc-500 text-xs font-mono-tech mt-1">Object-Oriented Programming (OOP)</p>
-            </div>
-
-            <p class="text-zinc-400 text-xs leading-relaxed pt-2">
-              An object-oriented command-line engine simulating robust retail banking ecosystems with secure user logins, cash transaction threads, and simulated file storage.
-            </p>
+        <!-- Project 3: Python Bank Simulator -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column: Title & Meta -->
+          <div class="md:col-span-5 space-y-3">
+            <span class="px-2.5 py-0.5 border border-zinc-800 text-[8px] font-mono-tech text-zinc-500 rounded-md">SYSTEM SIMULATOR</span>
+            <h3 class="text-4xl sm:text-5xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300">Bank Simulator</h3>
+            <div class="font-mono-tech text-[8px] text-zinc-500 block pt-1">OBJECT-ORIENTED PROGRAMMING &bull; PYTHON</div>
           </div>
-
-          <!-- Bottom elements -->
-          <div class="flex items-center justify-between border-t border-zinc-900 pt-5 mt-6">
-            <span class="font-mono-tech text-[8px] text-zinc-600">COMPILER_TYPE // OOP_PYTHON</span>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-colors duration-300">
-              <i data-lucide="terminal" class="w-4 h-4"></i>
+          
+          <!-- Right Column: Description & Action -->
+          <div class="md:col-span-7 space-y-6 md:pl-6">
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Designed a robust command-line banking system leveraging object-oriented paradigms. Features local data storage threads, secure login validations, and dynamic ledger calculations.
+            </p>
+            <div class="pt-2">
+              <a href="https://github.com/rudarsharma382-cell" target="_blank" class="inline-flex items-center space-x-2 text-[10px] font-mono-tech text-orchid hover:text-white transition-colors duration-300">
+                <span>EXPLORE CONTRIBUTION</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -187,7 +170,7 @@
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="border-t border-zinc-950 py-12 px-6 relative z-10 bg-black mt-20">
+  <footer class="border-t border-zinc-950 py-16 px-6 relative z-10 bg-black mt-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono-tech text-[9px] text-zinc-600">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer.</p>

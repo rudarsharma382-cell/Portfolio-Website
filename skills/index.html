@@ -15,14 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'cyber-cyan': '#00f5ff',
-            'cyber-blue': '#06b6d4',
-            'dark-bg': '#08080a',
-            'dark-card': '#111113',
-            'dark-border': 'rgba(39, 39, 42, 0.8)',
+            'orchid': '#C084FC',
+            'orchid-light': '#D6B4FC',
+            'dark-bg': '#000000',
+            'dark-border': 'rgba(39, 39, 42, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Playfair Display', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -36,16 +36,16 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased">
+<body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative antialiased">
 
   <!-- --- GLOBAL NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
       <!-- Logo "rudarsharma." -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
+          rudarsharma<span class="text-orchid font-extrabold">.</span>
         </span>
       </a>
 
@@ -60,7 +60,7 @@
 
       <!-- Right side Pill Button -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all duration-400 bg-zinc-900/40">
           SUPPORT WORK
         </a>
       </div>
@@ -75,199 +75,192 @@
     <div id="mobile-drawer" class="hidden md:hidden border-b border-zinc-900 bg-dark-bg/95 backdrop-blur-lg px-8 py-8 space-y-5 font-mono-tech text-[10px] absolute top-24 left-0 w-full z-40 transition-all duration-300">
       <a href="/" class="block text-zinc-400 hover:text-white py-2">HOME</a>
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
-      <a href="/skills/" class="block text-cyber-cyan py-2">SKILLS</a>
+      <a href="/skills/" class="block text-orchid py-2">SKILLS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
       <a href="/connect/" class="block text-zinc-400 hover:text-white py-2">CONTACT</a>
     </div>
   </header>
 
   <!-- --- MAIN SKILLS CONTENT CONTAINER --- -->
-  <main class="relative z-10 max-w-7xl mx-auto px-6 py-12 space-y-8">
-    <section id="skills" class="reveal-element md:pt-12 space-y-8">
+  <main class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-16">
+    <section id="skills" class="reveal-element space-y-16">
       
-      <!-- Title & Label Grid lines -->
-      <div class="space-y-3 border-b border-zinc-900 pb-6">
-        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-400 block">02 / SKILLS & WORKFLOWS</span>
-        <h2 class="text-4xl sm:text-6xl font-sans font-extrabold tracking-tight text-white leading-tight">
-          Skills & <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-cyber-cyan">Workflows.</span>
+      <!-- Title & Label (Huge Premium Editorial Heading) -->
+      <div class="space-y-4 border-b border-zinc-900 pb-10">
+        <span class="font-mono-tech text-xs tracking-[0.25em] text-zinc-500 block">02 / TECHNICAL MATRIX & TOOLKITS</span>
+        <h2 class="text-5xl sm:text-7xl font-sans font-extrabold tracking-tight text-white leading-tight">
+          Skills & <span class="font-serif italic text-orchid-light font-normal">Workflows.</span>
         </h2>
       </div>
 
-      <!-- 3-Column Skills grid of independent bordered cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Open, Full-Width Horizontal Rows (Separated by thin rules) -->
+      <div class="flex flex-col">
         
-        <!-- Column 1: Active Toolkit (with horizontal loading bars) -->
-        <div class="bento-card rounded-2xl p-8 space-y-8 h-[480px] flex flex-col justify-between">
-          <div class="space-y-6">
-            <div class="flex items-center space-x-3.5 pb-4 border-b border-zinc-900">
-              <span class="p-3 bg-zinc-950 text-cyber-cyan rounded-xl border border-zinc-800 shadow-md">
-                <i data-lucide="shield-check" class="w-5 h-5"></i>
-              </span>
-              <div>
-                <h4 class="font-sans font-bold text-sm text-white">Active Toolkit</h4>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-widest mt-0.5">PRODUCTION READY TOOLS</span>
-              </div>
-            </div>
-            
-            <div class="space-y-5">
-              <!-- Skill 1 -->
-              <div class="space-y-2">
-                <div class="flex justify-between text-xs">
-                  <span class="font-mono-tech text-zinc-300">Python 3.X</span>
-                  <span class="text-zinc-500 text-[10px]">Fluent</span>
-                </div>
-                <div class="h-1 bg-zinc-950 border border-zinc-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyber-cyan w-[85%]"></div>
-                </div>
-              </div>
-
-              <!-- Skill 2 -->
-              <div class="space-y-2">
-                <div class="flex justify-between text-xs">
-                  <span class="font-mono-tech text-zinc-300">JavaScript (ES6+)</span>
-                  <span class="text-zinc-500 text-[10px]">Intermediate</span>
-                </div>
-                <div class="h-1 bg-zinc-950 border border-zinc-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyber-cyan w-[70%]"></div>
-                </div>
-              </div>
-
-              <!-- Skill 3 -->
-              <div class="space-y-2">
-                <div class="flex justify-between text-xs">
-                  <span class="font-mono-tech text-zinc-300">HTML5 & CSS3</span>
-                  <span class="text-zinc-500 text-[10px]">Proficient</span>
-                </div>
-                <div class="h-1 bg-zinc-950 border border-zinc-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyber-cyan w-[90%]"></div>
-                </div>
-              </div>
-
-              <!-- Skill 4 -->
-              <div class="space-y-2">
-                <div class="flex justify-between text-xs">
-                  <span class="font-mono-tech text-zinc-300">Git & GitHub</span>
-                  <span class="text-zinc-500 text-[10px]">Active</span>
-                </div>
-                <div class="h-1 bg-zinc-950 border border-zinc-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyber-cyan w-[80%]"></div>
-                </div>
-              </div>
-
-              <!-- Skill 5 -->
-              <div class="space-y-2">
-                <div class="flex justify-between text-xs">
-                  <span class="font-mono-tech text-zinc-300">Prompt Engineering</span>
-                  <span class="text-zinc-500 text-[10px]">Expert</span>
-                </div>
-                <div class="h-1 bg-zinc-950 border border-zinc-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyber-cyan w-[95%]"></div>
-                </div>
-              </div>
-            </div>
+        <!-- Row 1: Active Toolkit -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column (Category details) -->
+          <div class="lg:col-span-4 space-y-3">
+            <span class="text-zinc-600 font-mono-tech text-[8px] font-bold block">01 // PRODUCTION TOOLKIT</span>
+            <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300">Active Core</h3>
+            <p class="text-zinc-500 text-xs leading-relaxed max-w-xs pt-1">
+              Production-ready languages and software controls configured for systems operations.
+            </p>
           </div>
+          
+          <!-- Right Column (Visual Skill Bars) -->
+          <div class="lg:col-span-8 space-y-6 lg:pl-12 w-full">
+            
+            <!-- Skill 1 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech text-zinc-400">
+                <span>PYTHON 3.X</span>
+                <span>85% FLUENCY</span>
+              </div>
+              <div class="h-[2px] bg-zinc-900 w-full overflow-hidden">
+                <div class="h-full bg-orchid w-[85%] transition-all duration-1000"></div>
+              </div>
+            </div>
 
-          <div class="border-t border-zinc-900 pt-4">
-            <span class="font-mono-tech text-[8px] text-zinc-600">COMPILED SYSTEM: 100% READY</span>
+            <!-- Skill 2 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech text-zinc-400">
+                <span>JAVASCRIPT (ES6+)</span>
+                <span>70% COMPILATION</span>
+              </div>
+              <div class="h-[2px] bg-zinc-900 w-full overflow-hidden">
+                <div class="h-full bg-orchid w-[70%] transition-all duration-1000"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech text-zinc-400">
+                <span>HTML5 & CSS3</span>
+                <span>90% DENSITY</span>
+              </div>
+              <div class="h-[2px] bg-zinc-900 w-full overflow-hidden">
+                <div class="h-full bg-orchid w-[90%] transition-all duration-1000"></div>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech text-zinc-400">
+                <span>GIT & GITHUB</span>
+                <span>80% DEPLOYMENT</span>
+              </div>
+              <div class="h-[2px] bg-zinc-900 w-full overflow-hidden">
+                <div class="h-full bg-orchid w-[80%] transition-all duration-1000"></div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Column 2: In-Flight Learning (with percentage badges) -->
-        <div class="bento-card rounded-2xl p-8 space-y-8 h-[480px] flex flex-col justify-between">
-          <div class="space-y-6">
-            <div class="flex items-center space-x-3.5 pb-4 border-b border-zinc-900">
-              <span class="p-3 bg-zinc-950 text-cyber-cyan rounded-xl border border-zinc-800 shadow-md">
-                <i data-lucide="activity" class="w-5 h-5"></i>
-              </span>
-              <div>
-                <h4 class="font-sans font-bold text-sm text-white">In-Flight Learning</h4>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-widest mt-0.5">CURRENT INTENSIVE FOCUS</span>
-              </div>
-            </div>
-            
-            <div class="space-y-4">
-              <!-- Item 1 -->
-              <div class="p-4 bg-zinc-950/40 border border-zinc-900 rounded-xl space-y-2 hover:border-cyan-500/20 transition-all duration-300">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs font-sans font-bold text-white">Backend Development</h5>
-                  <span class="px-2 py-0.5 bg-cyan-950/30 text-[8px] border border-cyan-900/30 text-cyber-cyan rounded-md font-mono-tech font-bold">50% LOADED</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] leading-relaxed">Developing core server routers, REST controllers, secure hashing, and database links.</p>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="p-4 bg-zinc-950/40 border border-zinc-900 rounded-xl space-y-2 hover:border-cyan-500/20 transition-all duration-300">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs font-sans font-bold text-white">Flutter Mobile Apps</h5>
-                  <span class="px-2 py-0.5 bg-cyan-950/30 text-[8px] border border-cyan-900/30 text-cyber-cyan rounded-md font-mono-tech font-bold">40% LOADED</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] leading-relaxed">Building cross-platform user interfaces, state managers, and Dart computational models.</p>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="p-4 bg-zinc-950/40 border border-zinc-900 rounded-xl space-y-2 hover:border-cyan-500/20 transition-all duration-300">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs font-sans font-bold text-white">Advanced Python OOP</h5>
-                  <span class="px-2 py-0.5 bg-cyan-950/30 text-[8px] border border-cyan-900/30 text-cyber-cyan rounded-md font-mono-tech font-bold">75% LOADED</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] leading-relaxed">Implementing advanced data structures, clean pattern abstractions, and thread pools.</p>
-              </div>
-            </div>
+        <!-- Row 2: In-Flight Learning -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column -->
+          <div class="lg:col-span-4 space-y-3">
+            <span class="text-zinc-600 font-mono-tech text-[8px] font-bold block">02 // ACTIVE ACCELERATION</span>
+            <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300">In-Flight</h3>
+            <p class="text-zinc-500 text-xs leading-relaxed max-w-xs pt-1">
+              Currently compiling advanced frameworks, server architectures, and mobile structures.
+            </p>
           </div>
+          
+          <!-- Right Column (Open floating list boxes) -->
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6 lg:pl-12 w-full">
+            
+            <!-- Block 1 -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <h4 class="font-sans font-extrabold text-sm text-white">Backend Systems</h4>
+                <span class="text-[8px] font-mono-tech text-orchid border border-orchid/30 px-2 py-0.5 rounded-full bg-purple-950/15">50% LOADED</span>
+              </div>
+              <p class="text-zinc-500 text-xs leading-relaxed">
+                Developing core server routing models, secure transaction managers, databases, and authentication hooks.
+              </p>
+            </div>
 
-          <div class="border-t border-zinc-900 pt-4">
-            <span class="font-mono-tech text-[8px] text-zinc-600">INBOUND THREADS: ACTIVE</span>
+            <!-- Block 2 -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <h4 class="font-sans font-extrabold text-sm text-white">Flutter Mobile</h4>
+                <span class="text-[8px] font-mono-tech text-orchid border border-orchid/30 px-2 py-0.5 rounded-full bg-purple-950/15">40% LOADED</span>
+              </div>
+              <p class="text-zinc-500 text-xs leading-relaxed">
+                Structuring cross-platform application logic, state flows, reactive widgets, and API handlers.
+              </p>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <h4 class="font-sans font-extrabold text-sm text-white">Advanced OOP</h4>
+                <span class="text-[8px] font-mono-tech text-orchid border border-orchid/30 px-2 py-0.5 rounded-full bg-purple-950/15">75% LOADED</span>
+              </div>
+              <p class="text-zinc-500 text-xs leading-relaxed">
+                Writing abstract factory architectures, optimized data layouts, and clean object patterns.
+              </p>
+            </div>
+
           </div>
         </div>
 
-        <!-- Column 3: Future Horizon (square bullets) -->
-        <div class="bento-card rounded-2xl p-8 space-y-8 h-[480px] flex flex-col justify-between">
-          <div class="space-y-6">
-            <div class="flex items-center space-x-3.5 pb-4 border-b border-zinc-900">
-              <span class="p-3 bg-zinc-950 text-cyber-cyan rounded-xl border border-zinc-800 shadow-md">
-                <i data-lucide="compass" class="w-5 h-5"></i>
-              </span>
-              <div>
-                <h4 class="font-sans font-bold text-sm text-white">Future Horizon</h4>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-widest mt-0.5">ROBOTICS & ADVANCED MATH</span>
-              </div>
-            </div>
+        <!-- Row 3: Future Horizon -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-zinc-900 items-start group">
+          <!-- Left Column -->
+          <div class="lg:col-span-4 space-y-3">
+            <span class="text-zinc-600 font-mono-tech text-[8px] font-bold block">03 // STRATEGIC HORIZON</span>
+            <h3 class="text-3xl font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300">Future Horizon</h3>
+            <p class="text-zinc-500 text-xs leading-relaxed max-w-xs pt-1">
+              R&D targets mapped across robotics logic, AI training modules, and hardware circuits.
+            </p>
+          </div>
+          
+          <!-- Right Column (Open listing with square bullets) -->
+          <div class="lg:col-span-8 space-y-6 lg:pl-12 w-full">
             
-            <div class="space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
               <!-- Item 1 -->
-              <div class="flex items-start space-x-3">
-                <span class="w-1.5 h-1.5 bg-cyber-cyan inline-block mt-2 flex-shrink-0 shadow-[0_0_6px_#00f5ff]"></span>
-                <div class="space-y-0.5">
-                  <h5 class="text-xs font-sans font-bold text-white">Robotics Programming</h5>
-                  <span class="font-mono-tech text-[8px] text-zinc-500 block">KINEMATIC MATRICES</span>
-                  <p class="text-zinc-500 text-[10px] leading-relaxed mt-1">Writing kinematic solvers, autonomous path routing, and feedback integrations.</p>
+              <div class="space-y-2 flex items-start space-x-3">
+                <span class="w-1.5 h-1.5 bg-orchid block mt-2 flex-shrink-0"></span>
+                <div>
+                  <h4 class="font-sans font-extrabold text-sm text-white">Robotics Control</h4>
+                  <span class="font-mono-tech text-[7px] text-zinc-500 block mt-0.5">KINEMATICS</span>
+                  <p class="text-zinc-500 text-xs leading-relaxed mt-2">
+                    Writing analytical inverse solvers, sensor feedback matrices, and path planning grids.
+                  </p>
                 </div>
               </div>
 
               <!-- Item 2 -->
-              <div class="flex items-start space-x-3">
-                <span class="w-1.5 h-1.5 bg-cyber-cyan inline-block mt-2 flex-shrink-0 shadow-[0_0_6px_#00f5ff]"></span>
-                <div class="space-y-0.5">
-                  <h5 class="text-xs font-sans font-bold text-white">Embedded Systems & IoT</h5>
-                  <span class="font-mono-tech text-[8px] text-zinc-500 block">MICROCONTROLLERS</span>
-                  <p class="text-zinc-500 text-[10px] leading-relaxed mt-1">Interfacing Raspberry Pi & Arduino circuitry with active sensor loops and hardware rails.</p>
+              <div class="space-y-2 flex items-start space-x-3">
+                <span class="w-1.5 h-1.5 bg-orchid block mt-2 flex-shrink-0"></span>
+                <div>
+                  <h4 class="font-sans font-extrabold text-sm text-white">Embedded Systems</h4>
+                  <span class="font-mono-tech text-[7px] text-zinc-500 block mt-0.5">MICROCONTROLLERS</span>
+                  <p class="text-zinc-500 text-xs leading-relaxed mt-2">
+                    Interfacing Raspberry Pi and Arduino processors with sensor matrices and servo arrays.
+                  </p>
                 </div>
               </div>
 
               <!-- Item 3 -->
-              <div class="flex items-start space-x-3">
-                <span class="w-1.5 h-1.5 bg-cyber-cyan inline-block mt-2 flex-shrink-0 shadow-[0_0_6px_#00f5ff]"></span>
-                <div class="space-y-0.5">
-                  <h5 class="text-xs font-sans font-bold text-white">Advanced Machine Learning</h5>
-                  <span class="font-mono-tech text-[8px] text-zinc-500 block">COMPUTER VISION</span>
-                  <p class="text-zinc-500 text-[10px] leading-relaxed mt-1">Constructing computer vision layers, deep reinforcement learning grids, and local AI nodes.</p>
+              <div class="space-y-2 flex items-start space-x-3">
+                <span class="w-1.5 h-1.5 bg-orchid block mt-2 flex-shrink-0"></span>
+                <div>
+                  <h4 class="font-sans font-extrabold text-sm text-white">Generative ML</h4>
+                  <span class="font-mono-tech text-[7px] text-zinc-500 block mt-0.5">NEURAL NETWORKS</span>
+                  <p class="text-zinc-500 text-xs leading-relaxed mt-2">
+                    Training local machine vision, custom classifiers, and integrating deep reinforcement modules.
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="border-t border-zinc-900 pt-4">
-            <span class="font-mono-tech text-[8px] text-zinc-600">R&D HORIZONS: MAPPED</span>
+            </div>
+
           </div>
         </div>
 
@@ -276,7 +269,7 @@
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="border-t border-zinc-950 py-12 px-6 relative z-10 bg-black mt-20">
+  <footer class="border-t border-zinc-950 py-16 px-6 relative z-10 bg-black mt-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono-tech text-[9px] text-zinc-600">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer.</p>

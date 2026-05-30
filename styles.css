@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-/* --- High-Tech Terminal Theme Variables --- */
+/* --- Premium Editorial Theme Variables --- */
 :root {
-  --bg-primary: #08080a;
-  --bg-secondary: #111113;
-  --border-color: rgba(39, 39, 42, 0.8); /* border-zinc-800/80 equivalent */
-  --accent-color: #00f5ff; /* Glowing neon cyber blue */
-  --accent-glow: rgba(0, 245, 255, 0.15);
+  --bg-primary: #000000;
+  --border-color: rgba(39, 39, 42, 0.4); /* border-zinc-900 equivalent */
+  --accent-color: #C084FC; /* Elegant Orchid Accent */
+  --accent-glow: rgba(192, 132, 252, 0.15);
 }
 
 html {
@@ -17,42 +16,26 @@ html {
   overflow-x: hidden;
 }
 
-/* Monospace spacing technical labels */
+/* Monospace tracked tech labels */
 .font-mono-tech {
   font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
-/* Custom scrollbars */
+/* Custom minimal scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 3px;
+  background: #18181b;
+  border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-color);
-}
-
-/* --- High-Tech Bento Cards --- */
-.bento-card {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
-}
-
-.bento-card:hover {
-  border-color: rgba(6, 182, 212, 0.4); /* Soft cyber blue border on hover */
-  transform: translateY(-2px);
-  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7);
 }
 
 /* --- Cybernetic Visual Accents --- */
@@ -65,31 +48,11 @@ html {
   box-shadow: 0 0 8px var(--accent-color);
 }
 
-.tech-corner-br {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.tech-corner-tl {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border-left: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
-}
-
 /* --- Reveal Animations --- */
 .reveal-element {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(30px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-element.revealed {
@@ -100,17 +63,17 @@ html {
 /* --- Micro-Animations --- */
 @keyframes pulseGlow {
   0%, 100% {
-    opacity: 0.3;
-    box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+    opacity: 0.4;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.1);
   }
   50% {
-    opacity: 0.8;
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    opacity: 0.9;
+    box-shadow: 0 0 25px rgba(192, 132, 252, 0.3);
   }
 }
 
 .pulse-glow-indicator {
-  animation: pulseGlow 2.5s infinite ease-in-out;
+  animation: pulseGlow 3s infinite ease-in-out;
 }
 
 @keyframes scanLine {
@@ -127,23 +90,24 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background: linear-gradient(to right, transparent, var(--accent-color), transparent);
-  box-shadow: 0 0 8px var(--accent-color);
-  opacity: 0.6;
-  animation: scanLine 4s linear infinite;
+  box-shadow: 0 0 6px var(--accent-color);
+  opacity: 0.5;
+  animation: scanLine 5s linear infinite;
   pointer-events: none;
   z-index: 10;
 }
 
 /* Magnetic style action buttons */
 .magnetic-btn {
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .magnetic-btn:hover {
-  border-color: #ffffff;
-  box-shadow: 0 10px 25px -10px rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 10px 30px -15px rgba(192, 132, 252, 0.15);
 }
 
 .nav-link-underline {
@@ -156,7 +120,7 @@ html {
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   background-color: var(--accent-color);
   transition: width 0.3s ease;
 }
@@ -164,4 +128,12 @@ html {
 .nav-link-underline:hover::after,
 .nav-link-active::after {
   width: 100%;
+}
+
+/* Editorial layout row borders */
+.divider-row {
+  border-bottom: 1px solid rgba(39, 39, 42, 0.4);
+}
+.divider-col {
+  border-left: 1px solid rgba(39, 39, 42, 0.4);
 }

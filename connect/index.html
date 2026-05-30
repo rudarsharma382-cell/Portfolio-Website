@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rudar Sharma | Contact Hub</title>
+  <title>Rudar Sharma | Connect Hub</title>
   <meta name="description" content="Connect with Rudar Sharma - direct email inquiry, project directories, and social links.">
   
   <!-- Tailwind CSS CDN -->
@@ -15,14 +15,14 @@
       theme: {
         extend: {
           colors: {
-            'cyber-cyan': '#00f5ff',
-            'cyber-blue': '#06b6d4',
-            'dark-bg': '#08080a',
-            'dark-card': '#111113',
-            'dark-border': 'rgba(39, 39, 42, 0.8)',
+            'orchid': '#C084FC',
+            'orchid-light': '#D6B4FC',
+            'dark-bg': '#000000',
+            'dark-border': 'rgba(39, 39, 42, 0.4)',
           },
           fontFamily: {
             'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'serif': ['Playfair Display', 'serif'],
             'mono-tech': ['JetBrains Mono', 'monospace'],
           }
         }
@@ -36,16 +36,16 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-dark-bg text-white selection:bg-cyber-cyan selection:text-black font-sans relative antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-dark-bg text-white selection:bg-orchid selection:text-black font-sans relative min-h-screen flex flex-col justify-between antialiased">
 
   <!-- --- GLOBAL NAVIGATION BAR --- -->
-  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/80 backdrop-blur-md transition-all duration-300">
+  <header id="navbar" class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-dark-bg/85 backdrop-blur-md transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
       
       <!-- Logo "rudarsharma." -->
       <a href="/" class="flex items-center space-x-2 group">
         <span class="font-sans text-xl font-bold tracking-tight text-white transition-colors duration-300">
-          rudarsharma<span class="text-cyber-cyan font-extrabold">.</span>
+          rudarsharma<span class="text-orchid font-extrabold">.</span>
         </span>
       </a>
 
@@ -60,7 +60,7 @@
 
       <!-- Right side Pill Button -->
       <div class="hidden sm:block">
-        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-cyber-cyan hover:text-cyber-cyan transition-all duration-400 bg-zinc-900/40">
+        <a href="/connect/" class="px-6 py-2.5 border border-zinc-800 text-[10px] font-mono-tech rounded-full hover:border-orchid hover:text-orchid transition-all duration-400 bg-zinc-900/40">
           SUPPORT WORK
         </a>
       </div>
@@ -77,102 +77,93 @@
       <a href="/projects/" class="block text-zinc-400 hover:text-white py-2">EXPERIENCE</a>
       <a href="/skills/" class="block text-zinc-400 hover:text-white py-2">SKILLS</a>
       <a href="/milestones/" class="block text-zinc-400 hover:text-white py-2">TRACK RECORD</a>
-      <a href="/connect/" class="block text-cyber-cyan py-2">CONTACT</a>
+      <a href="/connect/" class="block text-orchid py-2">CONTACT</a>
     </div>
   </header>
 
-  <!-- --- MAIN CONNECT CONTENT CONTAINER --- -->
-  <main class="relative z-10 max-w-md w-full mx-auto px-6 py-12 flex-grow flex items-center justify-center">
+  <!-- Main Standalone Centered Stack in Pure Black Void -->
+  <main class="relative z-10 max-w-2xl w-full mx-auto px-6 py-20 my-auto flex-grow flex items-center">
     <section id="connect" class="reveal-element w-full">
-      
-      <!-- Bento card stack box -->
-      <div class="bento-card rounded-2xl p-8 relative flex flex-col items-center space-y-8 w-full">
-        <div class="tech-corner-tl"></div>
-        <div class="tech-corner-br"></div>
+      <div class="flex flex-col items-center text-center space-y-12 w-full">
         
-        <!-- Pulsing cyber-blue glow ring around circular framed avatar -->
-        <div class="relative w-24 h-24 rounded-full p-1 border-2 border-cyber-cyan bg-zinc-950 flex items-center justify-center pulse-glow-indicator shadow-[0_0_20px_rgba(0,245,255,0.25)]">
+        <!-- Centered circular profile image with elegant orchid aura shadow -->
+        <div class="relative w-28 h-28 rounded-full p-0.5 border border-zinc-800 bg-zinc-950 flex items-center justify-center pulse-glow-indicator shadow-[0_0_35px_rgba(192,132,252,0.18)]">
           <div class="avatar-scan-overlay rounded-full"></div>
-          <img src="/robotics_avatar.png" alt="Rudar Sharma Circular Profile Avatar" class="w-full h-full object-cover rounded-full filter grayscale opacity-90 transition-all duration-300">
+          <img src="/robotics_avatar.png" alt="Rudar Sharma Circular Profile Avatar" class="w-full h-full object-cover rounded-full filter grayscale opacity-80 transition-all duration-300">
         </div>
 
-        <!-- Typography Heading -->
-        <div class="text-center space-y-2">
-          <h2 class="text-3xl font-sans font-extrabold text-white tracking-tight leading-none">
-            Rudar <span class="text-cyber-cyan">Sharma.</span>
+        <!-- Typography Branded Heading -->
+        <div class="space-y-4">
+          <h2 class="text-5xl font-sans font-extrabold text-white tracking-tight leading-none">
+            Rudar <span class="font-serif italic text-orchid-light font-normal">Sharma.</span>
           </h2>
-          <span class="font-mono-tech text-[8px] text-cyber-cyan block tracking-[0.3em] font-bold">@CODEALCHEMIST_</span>
+          <span class="font-mono-tech text-[8px] text-orchid block tracking-[0.35em] uppercase font-bold">@CODEALCHEMIST_</span>
         </div>
 
-        <!-- Subtitle description -->
-        <p class="text-zinc-500 text-xs max-w-xs text-center leading-relaxed">
-          Building <strong class="text-white font-bold">HOOLLOW</strong>. Engineering the <strong class="text-white font-bold">Future of Robotics</strong>.
-        </p>
+        <!-- Subtitle description bolding key entities -->
+        <div>
+          <p class="text-zinc-500 text-sm max-w-sm leading-relaxed">
+            Building <strong class="text-white font-bold">HOOLLOW</strong>. Engineering the <strong class="text-white font-bold">Future of Robotics</strong>.
+          </p>
+        </div>
 
-        <!-- Pill-shaped stacked link boxes -->
-        <div class="w-full space-y-3 pt-2">
+        <!-- Open, card-less edge-to-edge text links with generous vertical margins and orchid underlines -->
+        <div class="w-full space-y-2 pt-6 max-w-md">
           
           <!-- Link 1: Email -->
-          <a href="mailto:rudarsharma382@gmail.com" class="w-full py-4 px-6 bg-zinc-950/40 border border-zinc-800 rounded-full flex items-center justify-between text-left group hover:border-cyber-cyan transition-all duration-300">
-            <div class="flex items-center space-x-4">
-              <span class="p-2.5 bg-zinc-900 border border-zinc-800 rounded-full text-zinc-400 group-hover:text-cyber-cyan group-hover:border-cyber-cyan/40 transition-colors">
-                <i data-lucide="mail" class="w-4 h-4"></i>
+          <a href="mailto:rudarsharma382@gmail.com" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+                Email Me
+                <!-- Custom smooth absolute orchid hover underline -->
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="text-xs font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors">Email Me</span>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-wider mt-0.5">DIRECT INQUIRY</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">DIRECT INQUIRY</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-transform transform group-hover:translate-x-1 duration-300">
-              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 2: Portfolio Home -->
-          <a href="/" class="w-full py-4 px-6 bg-zinc-950/40 border border-zinc-800 rounded-full flex items-center justify-between text-left group hover:border-cyber-cyan transition-all duration-300">
-            <div class="flex items-center space-x-4">
-              <span class="p-2.5 bg-zinc-900 border border-zinc-800 rounded-full text-zinc-400 group-hover:text-cyber-cyan group-hover:border-cyber-cyan/40 transition-colors">
-                <i data-lucide="globe" class="w-4 h-4"></i>
+          <a href="/" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+                Portfolio Home
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="text-xs font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors">Portfolio Home</span>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-wider mt-0.5">RETURN TO BASE</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">RETURN TO BASE</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-transform transform group-hover:translate-x-1 duration-300">
-              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 3: GitHub -->
-          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-6 bg-zinc-950/40 border border-zinc-800 rounded-full flex items-center justify-between text-left group hover:border-cyber-cyan transition-all duration-300">
-            <div class="flex items-center space-x-4">
-              <span class="p-2.5 bg-zinc-900 border border-zinc-800 rounded-full text-zinc-400 group-hover:text-cyber-cyan group-hover:border-cyber-cyan/40 transition-colors">
-                <i data-lucide="github" class="w-4 h-4"></i>
+          <a href="https://github.com/rudarsharma382-cell" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+                GitHub Profile
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="text-xs font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors">GitHub Profile</span>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-wider mt-0.5">VIEW REPOSITORIES</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">VIEW REPOSITORIES</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-transform transform group-hover:translate-x-1 duration-300">
-              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
           <!-- Link 4: YouTube -->
-          <a href="https://youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-6 bg-zinc-950/40 border border-zinc-800 rounded-full flex items-center justify-between text-left group hover:border-cyber-cyan transition-all duration-300">
-            <div class="flex items-center space-x-4">
-              <span class="p-2.5 bg-zinc-900 border border-zinc-800 rounded-full text-zinc-400 group-hover:text-cyber-cyan group-hover:border-cyber-cyan/40 transition-colors">
-                <i data-lucide="youtube" class="w-4 h-4"></i>
+          <a href="https://www.youtube.com/@CodeAlchemist_" target="_blank" rel="noopener noreferrer" class="w-full py-6 border-b border-zinc-900 flex items-center justify-between text-left group transition-all duration-300">
+            <div class="space-y-1">
+              <span class="text-lg font-sans font-extrabold text-white group-hover:text-orchid transition-colors duration-300 relative inline-block">
+                YouTube Channel
+                <span class="absolute left-0 bottom-0 w-0 h-[1.5px] bg-orchid transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <div>
-                <span class="text-xs font-sans font-extrabold text-white group-hover:text-cyber-cyan transition-colors">YouTube Channel</span>
-                <span class="font-mono-tech text-[7px] text-zinc-500 block tracking-wider mt-0.5">WATCH JOURNAL TUTORIALS</span>
-              </div>
+              <span class="font-mono-tech text-[7px] text-zinc-600 block tracking-[0.15em] font-bold">WATCH JOURNAL TUTORIALS</span>
             </div>
-            <div class="text-zinc-600 group-hover:text-cyber-cyan transition-transform transform group-hover:translate-x-1 duration-300">
-              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            <div class="text-zinc-600 group-hover:text-orchid transition-all duration-300 transform group-hover:translate-x-1.5">
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </div>
           </a>
 
@@ -183,7 +174,7 @@
   </main>
 
   <!-- --- FOOTER --- -->
-  <footer class="border-t border-zinc-950 py-12 px-6 relative z-10 bg-black mt-20 text-center font-mono-tech text-[9px] text-zinc-600">
+  <footer class="py-12 px-6 relative z-10 bg-black text-center font-mono-tech text-[9px] text-zinc-600 border-t border-zinc-950">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <p>&copy; 2026 Rudar Sharma &bull; Aspiring Robotics Engineer. All connections active.</p>
